@@ -1,0 +1,8 @@
+obj/*
+backup/*
+*.log
+*.lock
+*~
+*.bak
+*.pdb
+Thumbs.db
