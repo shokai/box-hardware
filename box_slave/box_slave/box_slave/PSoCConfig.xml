@@ -1,6 +1,6 @@
 <PSOC_DEVICE_DB>
 	<PSOC_CONFIG_LIST>
-		<PSOC_CONFIG NAME="box_slave" BASE_DEVICE="CY8C29466" SOURCE_GEN_TIME="1279655968" CONFIG_SAVE_TIME="1279796919" CONFIG_SAVE_DATE="Thu Jul 22 20:08:39 2010
+		<PSOC_CONFIG NAME="box_slave" BASE_DEVICE="CY8C29466" SOURCE_GEN_TIME="1279655968" CONFIG_SAVE_TIME="1279823400" CONFIG_SAVE_DATE="Fri Jul 23 03:30:00 2010
 " VERSION="4.0" DESCRIPTION="" PACKAGE_TYPE="PDIP" PACKAGE_SHAPE="2" LOOP_CONFIG_INIT="Enable" UM_INT_GEN_CONTROL="Disable" CONFIG_NAME_PREPEND="Enable" DESIGN_VERSION="" DOC_FILENAME="" DEVICE_DISPLAY_NAME="CY8C29466-24PXI" PSOC_EXPRESS_PROJECT="FALSE">
 			<DESIGN_FILE_LIST/>
 			<USER_MODULE_LIST>
@@ -146,7 +146,7 @@
 									<REGISTER NAME="DATA_1" ADDR="2d" VALUE="0" DATASHEET_NAME="DCB03DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="2e" VALUE="0" DATASHEET_NAME="DCB03DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="12c" VALUE="21" DATASHEET_NAME="DCB03FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="12d" VALUE="50" DATASHEET_NAME="DCB03IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="12d" VALUE="55" DATASHEET_NAME="DCB03IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="12e" VALUE="40" DATASHEET_NAME="DCB03OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -160,7 +160,7 @@
 									<REGISTER NAME="DATA_1" ADDR="39" VALUE="0" DATASHEET_NAME="DCB12DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="3a" VALUE="0" DATASHEET_NAME="DCB12DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="138" VALUE="1" DATASHEET_NAME="DCB12FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="139" VALUE="10" DATASHEET_NAME="DCB12IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="139" VALUE="15" DATASHEET_NAME="DCB12IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="13a" VALUE="40" DATASHEET_NAME="DCB12OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -172,7 +172,7 @@
 									<REGISTER NAME="DATA_1" ADDR="3d" VALUE="0" DATASHEET_NAME="DCB13DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="3e" VALUE="0" DATASHEET_NAME="DCB13DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="13c" VALUE="21" DATASHEET_NAME="DCB13FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="13d" VALUE="30" DATASHEET_NAME="DCB13IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="13d" VALUE="35" DATASHEET_NAME="DCB13IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="13e" VALUE="40" DATASHEET_NAME="DCB13OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -183,16 +183,16 @@
 						</RESOURCE_LIST>
 					</SHAPE>
 					<PARAMETER_LIST>
-						<PARAMETER NAME="ADCResolution" VALUE="10 Bit"/>
+						<PARAMETER NAME="ADCResolution" VALUE="13 Bit"/>
 						<PARAMETER NAME="Active Distance Threshold X" VALUE=""/>
 						<PARAMETER NAME="Active Distance Threshold Y" VALUE=""/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="CalcTime" VALUE="1"/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
-						<PARAMETER NAME="Clock" VALUE=""/>
+						<PARAMETER NAME="Clock" VALUE="VC1"/>
 						<PARAMETER NAME="ClockPhase" VALUE="Norm"/>
-						<PARAMETER NAME="DataFormat" VALUE="Signed"/>
+						<PARAMETER NAME="DataFormat" VALUE="Unsigned"/>
 						<PARAMETER NAME="DeadTime" VALUE=""/>
 						<PARAMETER NAME="Debounce" VALUE=""/>
 						<PARAMETER NAME="Debounce MT Pan Count" VALUE=""/>
@@ -203,7 +203,7 @@
 						<PARAMETER NAME="FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
-						<PARAMETER NAME="Input" VALUE=""/>
+						<PARAMETER NAME="Input" VALUE="ACB01"/>
 						<PARAMETER NAME="Input " VALUE=""/>
 						<PARAMETER NAME="IntDispatchMode" VALUE="ActiveStatus"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
@@ -267,7 +267,7 @@
 									<REGISTER NAME="DATA_1" ADDR="31" VALUE="0" DATASHEET_NAME="DBB10DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="32" VALUE="0" DATASHEET_NAME="DBB10DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="130" VALUE="21" DATASHEET_NAME="DBB10FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="131" VALUE="60" DATASHEET_NAME="DBB10IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="131" VALUE="65" DATASHEET_NAME="DBB10IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="132" VALUE="40" DATASHEET_NAME="DBB10OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -281,7 +281,7 @@
 									<REGISTER NAME="DATA_1" ADDR="41" VALUE="0" DATASHEET_NAME="DBB20DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="42" VALUE="0" DATASHEET_NAME="DBB20DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="140" VALUE="1" DATASHEET_NAME="DBB20FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="141" VALUE="10" DATASHEET_NAME="DBA20IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="141" VALUE="15" DATASHEET_NAME="DBA20IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="142" VALUE="40" DATASHEET_NAME="DBA20OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -293,7 +293,7 @@
 									<REGISTER NAME="DATA_1" ADDR="45" VALUE="0" DATASHEET_NAME="DBB21DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="46" VALUE="0" DATASHEET_NAME="DBB21DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="144" VALUE="21" DATASHEET_NAME="DBB21FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="145" VALUE="30" DATASHEET_NAME="DBB21IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="145" VALUE="35" DATASHEET_NAME="DBB21IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="146" VALUE="40" DATASHEET_NAME="DBB21OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -304,16 +304,16 @@
 						</RESOURCE_LIST>
 					</SHAPE>
 					<PARAMETER_LIST>
-						<PARAMETER NAME="ADCResolution" VALUE="10 Bit"/>
+						<PARAMETER NAME="ADCResolution" VALUE="13 Bit"/>
 						<PARAMETER NAME="Active Distance Threshold X" VALUE=""/>
 						<PARAMETER NAME="Active Distance Threshold Y" VALUE=""/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="CalcTime" VALUE="1"/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
-						<PARAMETER NAME="Clock" VALUE=""/>
+						<PARAMETER NAME="Clock" VALUE="VC1"/>
 						<PARAMETER NAME="ClockPhase" VALUE="Norm"/>
-						<PARAMETER NAME="DataFormat" VALUE="Signed"/>
+						<PARAMETER NAME="DataFormat" VALUE="Unsigned"/>
 						<PARAMETER NAME="DeadTime" VALUE=""/>
 						<PARAMETER NAME="Debounce" VALUE=""/>
 						<PARAMETER NAME="Debounce MT Pan Count" VALUE=""/>
@@ -325,7 +325,7 @@
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
 						<PARAMETER NAME="Input" VALUE=""/>
-						<PARAMETER NAME="Input " VALUE=""/>
+						<PARAMETER NAME="Input " VALUE="ACB02"/>
 						<PARAMETER NAME="IntDispatchMode" VALUE="ActiveStatus"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
 						<PARAMETER NAME="LowBaselineReset" VALUE=""/>
@@ -388,7 +388,7 @@
 									<REGISTER NAME="DATA_1" ADDR="35" VALUE="0" DATASHEET_NAME="DBB11DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="36" VALUE="0" DATASHEET_NAME="DBB11DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="134" VALUE="21" DATASHEET_NAME="DBB11FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="135" VALUE="70" DATASHEET_NAME="DBB11IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="135" VALUE="75" DATASHEET_NAME="DBB11IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="136" VALUE="40" DATASHEET_NAME="DBB11OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -402,7 +402,7 @@
 									<REGISTER NAME="DATA_1" ADDR="49" VALUE="0" DATASHEET_NAME="DCB22DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="4a" VALUE="0" DATASHEET_NAME="DCB22DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="148" VALUE="1" DATASHEET_NAME="DCB22FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="149" VALUE="10" DATASHEET_NAME="DCB22IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="149" VALUE="15" DATASHEET_NAME="DCB22IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="14a" VALUE="40" DATASHEET_NAME="DCB22OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -414,7 +414,7 @@
 									<REGISTER NAME="DATA_1" ADDR="4d" VALUE="0" DATASHEET_NAME="DCB23DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="4e" VALUE="0" DATASHEET_NAME="DCB23DR2"/>
 									<REGISTER NAME="DIG_BasicFunction" ADDR="14c" VALUE="21" DATASHEET_NAME="DCB23FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="14d" VALUE="30" DATASHEET_NAME="DCB23IN"/>
+									<REGISTER NAME="DIG_Input" ADDR="14d" VALUE="35" DATASHEET_NAME="DCB23IN"/>
 									<REGISTER NAME="DIG_Output" ADDR="14e" VALUE="40" DATASHEET_NAME="DCB23OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
@@ -425,16 +425,16 @@
 						</RESOURCE_LIST>
 					</SHAPE>
 					<PARAMETER_LIST>
-						<PARAMETER NAME="ADCResolution" VALUE="10 Bit"/>
+						<PARAMETER NAME="ADCResolution" VALUE="13 Bit"/>
 						<PARAMETER NAME="Active Distance Threshold X" VALUE=""/>
 						<PARAMETER NAME="Active Distance Threshold Y" VALUE=""/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="CalcTime" VALUE="1"/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
-						<PARAMETER NAME="Clock" VALUE=""/>
+						<PARAMETER NAME="Clock" VALUE="VC1"/>
 						<PARAMETER NAME="ClockPhase" VALUE="Norm"/>
-						<PARAMETER NAME="DataFormat" VALUE="Signed"/>
+						<PARAMETER NAME="DataFormat" VALUE="Unsigned"/>
 						<PARAMETER NAME="DeadTime" VALUE=""/>
 						<PARAMETER NAME="Debounce" VALUE=""/>
 						<PARAMETER NAME="Debounce MT Pan Count" VALUE=""/>
@@ -445,7 +445,7 @@
 						<PARAMETER NAME="FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
-						<PARAMETER NAME="Input" VALUE=""/>
+						<PARAMETER NAME="Input" VALUE="ACB03"/>
 						<PARAMETER NAME="Input " VALUE=""/>
 						<PARAMETER NAME="IntDispatchMode" VALUE="ActiveStatus"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
@@ -488,7 +488,7 @@
 						<PARAMETER NAME="iDAC Range" VALUE=""/>
 					</PARAMETER_LIST>
 				</USER_MODULE>
-				<USER_MODULE NAME="I2CHW" INSTANCE_NAME="I2CHW_1" VERSION="1.6">
+				<USER_MODULE NAME="I2CHW" INSTANCE_NAME="I2CHW" VERSION="1.6">
 					<SHAPE SHAPE_TYPE="BLOCKLIST" COLOR_INDEX="9" NAME="I2CHWSlave">
 						<RESOURCE_LIST>
 							<RESOURCE NAME="I2C" TYPE="I2C_CONTROLLER" DEVICE_RESOURCE_NAME="I2CController"/>
@@ -501,7 +501,7 @@
 						<PARAMETER NAME="Auto_Addr_Check" VALUE="Disable"/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
-						<PARAMETER NAME="CPU_Clk_speed_(CY8C27xA)" VALUE="6MHz OR LESS"/>
+						<PARAMETER NAME="CPU_Clk_speed_(CY8C27xA)" VALUE="NOT CY8C27xA"/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
 						<PARAMETER NAME="Communication_Service_Type" VALUE="Interrupt"/>
 						<PARAMETER NAME="DeadTime" VALUE=""/>
@@ -514,8 +514,8 @@
 						<PARAMETER NAME="FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
-						<PARAMETER NAME="I2C Clock" VALUE=""/>
-						<PARAMETER NAME="I2C Pin" VALUE=""/>
+						<PARAMETER NAME="I2C Clock" VALUE="100K Standard"/>
+						<PARAMETER NAME="I2C Pin" VALUE="P[1]5-P[1]7"/>
 						<PARAMETER NAME="IntDispatchMode" VALUE="ActiveStatus"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
 						<PARAMETER NAME="LowBaselineReset" VALUE=""/>
@@ -548,7 +548,7 @@
 						<PARAMETER NAME="Scanning Speed" VALUE=""/>
 						<PARAMETER NAME="Sensors Autoreset" VALUE=""/>
 						<PARAMETER NAME="ShieldElectrodeOut" VALUE=""/>
-						<PARAMETER NAME="Slave_Addr" VALUE="0"/>
+						<PARAMETER NAME="Slave_Addr" VALUE="17"/>
 						<PARAMETER NAME="Tuner" VALUE=""/>
 						<PARAMETER NAME="USED_I2C_BLOCK" VALUE="I2CController_0"/>
 						<PARAMETER NAME="WOT FingerThreshold" VALUE=""/>
@@ -565,8 +565,8 @@
 						<BLOCK_LIST>
 							<BLOCK NAME="GAIN" TYPE="ANALOG_CT" LOCATION="0 0">
 								<REGISTER_LIST>
-									<REGISTER NAME="CR0" ADDR="71" VALUE="c" DATASHEET_NAME="ACB00CR0"/>
-									<REGISTER NAME="CR1" ADDR="72" VALUE="20" DATASHEET_NAME="ACB00CR1"/>
+									<REGISTER NAME="CR0" ADDR="71" VALUE="fe" DATASHEET_NAME="ACB00CR0"/>
+									<REGISTER NAME="CR1" ADDR="72" VALUE="21" DATASHEET_NAME="ACB00CR1"/>
 									<REGISTER NAME="CR2" ADDR="73" VALUE="20" DATASHEET_NAME="ACB00CR2"/>
 									<REGISTER NAME="CR3" ADDR="70" VALUE="0" DATASHEET_NAME="ACB00CR3"/>
 								</REGISTER_LIST>
@@ -578,7 +578,7 @@
 					<PARAMETER_LIST>
 						<PARAMETER NAME="Active Distance Threshold X" VALUE=""/>
 						<PARAMETER NAME="Active Distance Threshold Y" VALUE=""/>
-						<PARAMETER NAME="AnalogBus" VALUE=""/>
+						<PARAMETER NAME="AnalogBus" VALUE="Disable"/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
@@ -590,10 +590,10 @@
 						<PARAMETER NAME="Debounce ST Pan Count" VALUE=""/>
 						<PARAMETER NAME="Feedback Resistor Pin" VALUE=""/>
 						<PARAMETER NAME="FingerThreshold" VALUE=""/>
-						<PARAMETER NAME="Gain" VALUE=""/>
+						<PARAMETER NAME="Gain" VALUE="1.000"/>
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
-						<PARAMETER NAME="Input" VALUE=""/>
+						<PARAMETER NAME="Input" VALUE="AnalogColumn_InputMUX_0"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
 						<PARAMETER NAME="LowBaselineReset" VALUE=""/>
 						<PARAMETER NAME="MT Finger Settling Count" VALUE=""/>
@@ -611,7 +611,7 @@
 						<PARAMETER NAME="RawData Jitter Filter" VALUE=""/>
 						<PARAMETER NAME="RawData Median Filter" VALUE=""/>
 						<PARAMETER NAME="Ref Value" VALUE=""/>
-						<PARAMETER NAME="Reference" VALUE=""/>
+						<PARAMETER NAME="Reference" VALUE="VSS"/>
 						<PARAMETER NAME="Resolution" VALUE=""/>
 						<PARAMETER NAME="Rotate Debounce Limit" VALUE=""/>
 						<PARAMETER NAME="ST Click X Radius PX" VALUE=""/>
@@ -639,8 +639,8 @@
 						<BLOCK_LIST>
 							<BLOCK NAME="GAIN" TYPE="ANALOG_CT" LOCATION="0 1">
 								<REGISTER_LIST>
-									<REGISTER NAME="CR0" ADDR="75" VALUE="c" DATASHEET_NAME="ACB01CR0"/>
-									<REGISTER NAME="CR1" ADDR="76" VALUE="20" DATASHEET_NAME="ACB01CR1"/>
+									<REGISTER NAME="CR0" ADDR="75" VALUE="fe" DATASHEET_NAME="ACB01CR0"/>
+									<REGISTER NAME="CR1" ADDR="76" VALUE="21" DATASHEET_NAME="ACB01CR1"/>
 									<REGISTER NAME="CR2" ADDR="77" VALUE="20" DATASHEET_NAME="ACB01CR2"/>
 									<REGISTER NAME="CR3" ADDR="74" VALUE="0" DATASHEET_NAME="ACB01CR3"/>
 								</REGISTER_LIST>
@@ -652,7 +652,7 @@
 					<PARAMETER_LIST>
 						<PARAMETER NAME="Active Distance Threshold X" VALUE=""/>
 						<PARAMETER NAME="Active Distance Threshold Y" VALUE=""/>
-						<PARAMETER NAME="AnalogBus" VALUE=""/>
+						<PARAMETER NAME="AnalogBus" VALUE="Disable"/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
@@ -664,10 +664,10 @@
 						<PARAMETER NAME="Debounce ST Pan Count" VALUE=""/>
 						<PARAMETER NAME="Feedback Resistor Pin" VALUE=""/>
 						<PARAMETER NAME="FingerThreshold" VALUE=""/>
-						<PARAMETER NAME="Gain" VALUE=""/>
+						<PARAMETER NAME="Gain" VALUE="1.000"/>
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
-						<PARAMETER NAME="Input" VALUE=""/>
+						<PARAMETER NAME="Input" VALUE="AnalogColumn_InputSelect_1"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
 						<PARAMETER NAME="LowBaselineReset" VALUE=""/>
 						<PARAMETER NAME="MT Finger Settling Count" VALUE=""/>
@@ -685,7 +685,7 @@
 						<PARAMETER NAME="RawData Jitter Filter" VALUE=""/>
 						<PARAMETER NAME="RawData Median Filter" VALUE=""/>
 						<PARAMETER NAME="Ref Value" VALUE=""/>
-						<PARAMETER NAME="Reference" VALUE=""/>
+						<PARAMETER NAME="Reference" VALUE="VSS"/>
 						<PARAMETER NAME="Resolution" VALUE=""/>
 						<PARAMETER NAME="Rotate Debounce Limit" VALUE=""/>
 						<PARAMETER NAME="ST Click X Radius PX" VALUE=""/>
@@ -713,8 +713,8 @@
 						<BLOCK_LIST>
 							<BLOCK NAME="GAIN" TYPE="ANALOG_CT" LOCATION="0 2">
 								<REGISTER_LIST>
-									<REGISTER NAME="CR0" ADDR="79" VALUE="c" DATASHEET_NAME="ACB02CR0"/>
-									<REGISTER NAME="CR1" ADDR="7a" VALUE="20" DATASHEET_NAME="ACB02CR1"/>
+									<REGISTER NAME="CR0" ADDR="79" VALUE="fe" DATASHEET_NAME="ACB02CR0"/>
+									<REGISTER NAME="CR1" ADDR="7a" VALUE="21" DATASHEET_NAME="ACB02CR1"/>
 									<REGISTER NAME="CR2" ADDR="7b" VALUE="20" DATASHEET_NAME="ACB02CR2"/>
 									<REGISTER NAME="CR3" ADDR="78" VALUE="0" DATASHEET_NAME="ACB02CR3"/>
 								</REGISTER_LIST>
@@ -726,7 +726,7 @@
 					<PARAMETER_LIST>
 						<PARAMETER NAME="Active Distance Threshold X" VALUE=""/>
 						<PARAMETER NAME="Active Distance Threshold Y" VALUE=""/>
-						<PARAMETER NAME="AnalogBus" VALUE=""/>
+						<PARAMETER NAME="AnalogBus" VALUE="Disable"/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
@@ -738,10 +738,10 @@
 						<PARAMETER NAME="Debounce ST Pan Count" VALUE=""/>
 						<PARAMETER NAME="Feedback Resistor Pin" VALUE=""/>
 						<PARAMETER NAME="FingerThreshold" VALUE=""/>
-						<PARAMETER NAME="Gain" VALUE=""/>
+						<PARAMETER NAME="Gain" VALUE="1.000"/>
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
-						<PARAMETER NAME="Input" VALUE=""/>
+						<PARAMETER NAME="Input" VALUE="AnalogColumn_InputSelect_2"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
 						<PARAMETER NAME="LowBaselineReset" VALUE=""/>
 						<PARAMETER NAME="MT Finger Settling Count" VALUE=""/>
@@ -759,7 +759,7 @@
 						<PARAMETER NAME="RawData Jitter Filter" VALUE=""/>
 						<PARAMETER NAME="RawData Median Filter" VALUE=""/>
 						<PARAMETER NAME="Ref Value" VALUE=""/>
-						<PARAMETER NAME="Reference" VALUE=""/>
+						<PARAMETER NAME="Reference" VALUE="VSS"/>
 						<PARAMETER NAME="Resolution" VALUE=""/>
 						<PARAMETER NAME="Rotate Debounce Limit" VALUE=""/>
 						<PARAMETER NAME="ST Click X Radius PX" VALUE=""/>
@@ -787,8 +787,8 @@
 						<BLOCK_LIST>
 							<BLOCK NAME="GAIN" TYPE="ANALOG_CT" LOCATION="0 3">
 								<REGISTER_LIST>
-									<REGISTER NAME="CR0" ADDR="7d" VALUE="c" DATASHEET_NAME="ACB03CR0"/>
-									<REGISTER NAME="CR1" ADDR="7e" VALUE="20" DATASHEET_NAME="ACB03CR1"/>
+									<REGISTER NAME="CR0" ADDR="7d" VALUE="fe" DATASHEET_NAME="ACB03CR0"/>
+									<REGISTER NAME="CR1" ADDR="7e" VALUE="21" DATASHEET_NAME="ACB03CR1"/>
 									<REGISTER NAME="CR2" ADDR="7f" VALUE="20" DATASHEET_NAME="ACB03CR2"/>
 									<REGISTER NAME="CR3" ADDR="7c" VALUE="0" DATASHEET_NAME="ACB03CR3"/>
 								</REGISTER_LIST>
@@ -800,7 +800,7 @@
 					<PARAMETER_LIST>
 						<PARAMETER NAME="Active Distance Threshold X" VALUE=""/>
 						<PARAMETER NAME="Active Distance Threshold Y" VALUE=""/>
-						<PARAMETER NAME="AnalogBus" VALUE=""/>
+						<PARAMETER NAME="AnalogBus" VALUE="Disable"/>
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
@@ -812,10 +812,10 @@
 						<PARAMETER NAME="Debounce ST Pan Count" VALUE=""/>
 						<PARAMETER NAME="Feedback Resistor Pin" VALUE=""/>
 						<PARAMETER NAME="FingerThreshold" VALUE=""/>
-						<PARAMETER NAME="Gain" VALUE=""/>
+						<PARAMETER NAME="Gain" VALUE="1.000"/>
 						<PARAMETER NAME="Gain-Offset Compensation" VALUE=""/>
 						<PARAMETER NAME="Hysteresis" VALUE=""/>
-						<PARAMETER NAME="Input" VALUE=""/>
+						<PARAMETER NAME="Input" VALUE="AnalogColumn_InputMUX_3"/>
 						<PARAMETER NAME="Integration Cycles" VALUE=""/>
 						<PARAMETER NAME="LowBaselineReset" VALUE=""/>
 						<PARAMETER NAME="MT Finger Settling Count" VALUE=""/>
@@ -833,7 +833,7 @@
 						<PARAMETER NAME="RawData Jitter Filter" VALUE=""/>
 						<PARAMETER NAME="RawData Median Filter" VALUE=""/>
 						<PARAMETER NAME="Ref Value" VALUE=""/>
-						<PARAMETER NAME="Reference" VALUE=""/>
+						<PARAMETER NAME="Reference" VALUE="VSS"/>
 						<PARAMETER NAME="Resolution" VALUE=""/>
 						<PARAMETER NAME="Rotate Debounce Limit" VALUE=""/>
 						<PARAMETER NAME="ST Click X Radius PX" VALUE=""/>
@@ -856,7 +856,7 @@
 						<PARAMETER NAME="iDAC Range" VALUE=""/>
 					</PARAMETER_LIST>
 				</USER_MODULE>
-				<USER_MODULE NAME="TX8" INSTANCE_NAME="TX8_1" VERSION="3.3">
+				<USER_MODULE NAME="TX8" INSTANCE_NAME="TX8" VERSION="3.3">
 					<SHAPE SHAPE_TYPE="BLOCKLIST" COLOR_INDEX="10" NAME="TX827">
 						<BLOCK_LIST>
 							<BLOCK NAME="TX8" TYPE="DIGITAL_COMM" LOCATION="14">
@@ -865,9 +865,9 @@
 									<REGISTER NAME="DATA_0" ADDR="58" VALUE="0" DATASHEET_NAME="DCB32DR0"/>
 									<REGISTER NAME="DATA_1" ADDR="59" VALUE="0" DATASHEET_NAME="DCB32DR1"/>
 									<REGISTER NAME="DATA_2" ADDR="5a" VALUE="0" DATASHEET_NAME="DCB32DR2"/>
-									<REGISTER NAME="DIG_BasicFunction" ADDR="158" VALUE="d" DATASHEET_NAME="DCB32FN"/>
-									<REGISTER NAME="DIG_Input" ADDR="159" VALUE="0" DATASHEET_NAME="DCB32IN"/>
-									<REGISTER NAME="DIG_Output" ADDR="15a" VALUE="0" DATASHEET_NAME="DCB32OU"/>
+									<REGISTER NAME="DIG_BasicFunction" ADDR="158" VALUE="1d" DATASHEET_NAME="DCB32FN"/>
+									<REGISTER NAME="DIG_Input" ADDR="159" VALUE="1" DATASHEET_NAME="DCB32IN"/>
+									<REGISTER NAME="DIG_Output" ADDR="15a" VALUE="44" DATASHEET_NAME="DCB32OU"/>
 								</REGISTER_LIST>
 								<INPUT_LIST/>
 							</BLOCK>
@@ -880,9 +880,9 @@
 						<PARAMETER NAME="BaselineUpdateThreshold" VALUE=""/>
 						<PARAMETER NAME="Button FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="Centroid" VALUE=""/>
-						<PARAMETER NAME="Clock" VALUE=""/>
-						<PARAMETER NAME="ClockSync" VALUE=""/>
-						<PARAMETER NAME="Data Clock Out" VALUE=""/>
+						<PARAMETER NAME="Clock" VALUE="VC3"/>
+						<PARAMETER NAME="ClockSync" VALUE="Sync to SysClk"/>
+						<PARAMETER NAME="Data Clock Out" VALUE="None"/>
 						<PARAMETER NAME="DeadTime" VALUE=""/>
 						<PARAMETER NAME="Debounce" VALUE=""/>
 						<PARAMETER NAME="Debounce MT Pan Count" VALUE=""/>
@@ -906,7 +906,7 @@
 						<PARAMETER NAME="NegativeNoiseThreshold" VALUE=""/>
 						<PARAMETER NAME="NoiseThreshold" VALUE=""/>
 						<PARAMETER NAME="On-Chip Centroid" VALUE=""/>
-						<PARAMETER NAME="Output" VALUE=""/>
+						<PARAMETER NAME="Output" VALUE="Row_3_Output_0"/>
 						<PARAMETER NAME="Prescaler Period" VALUE=""/>
 						<PARAMETER NAME="RawData IIR Filter" VALUE=""/>
 						<PARAMETER NAME="RawData IIR Filter Coeff" VALUE=""/>
@@ -926,7 +926,7 @@
 						<PARAMETER NAME="Scanning Speed" VALUE=""/>
 						<PARAMETER NAME="Sensors Autoreset" VALUE=""/>
 						<PARAMETER NAME="ShieldElectrodeOut" VALUE=""/>
-						<PARAMETER NAME="TX Interrupt Mode" VALUE=""/>
+						<PARAMETER NAME="TX Interrupt Mode" VALUE="TXComplete"/>
 						<PARAMETER NAME="Tuner" VALUE=""/>
 						<PARAMETER NAME="WOT FingerThreshold" VALUE=""/>
 						<PARAMETER NAME="XY IIR Filter" VALUE=""/>
@@ -1075,9 +1075,9 @@
 					<RESOURCE NAME="AnalogColumn_Clock_2" VALUE="VC1" TYPE="ANALOG_COLUMN_CLOCK_MUX"/>
 					<RESOURCE NAME="AnalogColumn_Clock_3" VALUE="VC1" TYPE="ANALOG_COLUMN_CLOCK_MUX"/>
 					<RESOURCE NAME="AnalogColumn_InputMUX_0" VALUE="Port_0_1" TYPE="COLUMN_INPUT"/>
-					<RESOURCE NAME="AnalogColumn_InputMUX_1" VALUE="Port_0_4" TYPE="COLUMN_INPUT"/>
-					<RESOURCE NAME="AnalogColumn_InputMUX_2" VALUE="Port_0_5" TYPE="COLUMN_INPUT"/>
-					<RESOURCE NAME="AnalogColumn_InputMUX_3" VALUE="Port_0_0" TYPE="COLUMN_INPUT"/>
+					<RESOURCE NAME="AnalogColumn_InputMUX_1" VALUE="Port_0_2" TYPE="COLUMN_INPUT"/>
+					<RESOURCE NAME="AnalogColumn_InputMUX_2" VALUE="Port_0_3" TYPE="COLUMN_INPUT"/>
+					<RESOURCE NAME="AnalogColumn_InputMUX_3" VALUE="Port_0_4" TYPE="COLUMN_INPUT"/>
 					<RESOURCE NAME="AnalogColumn_InputSelect_1" VALUE="AnalogColumn_InputMUX_1" TYPE="COLUMN_INPUT_SELECT"/>
 					<RESOURCE NAME="AnalogColumn_InputSelect_2" VALUE="AnalogColumn_InputMUX_2" TYPE="COLUMN_INPUT_SELECT"/>
 					<RESOURCE NAME="AnalogColumn_Modulator_0" VALUE="None" TYPE="ANALOG_MODULATOR"/>
@@ -1166,7 +1166,7 @@
 					<RESOURCE NAME="GlobalOdd_5_Interconnect" VALUE="" TYPE="GLOBAL_BUS_SHORT"/>
 					<RESOURCE NAME="GlobalOdd_6_Interconnect" VALUE="" TYPE="GLOBAL_BUS_SHORT"/>
 					<RESOURCE NAME="GlobalOdd_7_Interconnect" VALUE="" TYPE="GLOBAL_BUS_SHORT"/>
-					<RESOURCE NAME="GlobalOutEven_0" VALUE="" TYPE="GLOBAL_BUS"/>
+					<RESOURCE NAME="GlobalOutEven_0" VALUE="Row_3_Output_0_Drive_0" TYPE="GLOBAL_BUS"/>
 					<RESOURCE NAME="GlobalOutEven_1" VALUE="" TYPE="GLOBAL_BUS"/>
 					<RESOURCE NAME="GlobalOutEven_2" VALUE="" TYPE="GLOBAL_BUS"/>
 					<RESOURCE NAME="GlobalOutEven_3" VALUE="" TYPE="GLOBAL_BUS"/>
@@ -1183,19 +1183,39 @@
 					<RESOURCE NAME="GlobalOutOdd_6" VALUE="" TYPE="GLOBAL_BUS"/>
 					<RESOURCE NAME="GlobalOutOdd_7" VALUE="" TYPE="GLOBAL_BUS"/>
 					<RESOURCE NAME="I2CController" VALUE="" TYPE="I2C_CONTROLLER"/>
-					<RESOURCE NAME="Port_0_0" VALUE="StdCPU" TYPE="PIN"/>
-					<RESOURCE NAME="Port_0_0_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_0" VALUE="GlobalOutEven_0" TYPE="PIN">
+						<PIN_VALUE_LIST>
+							<PIN_VALUE NAME="GlobalOutEven_0"/>
+						</PIN_VALUE_LIST>
+					</RESOURCE>
+					<RESOURCE NAME="Port_0_0_Drive" VALUE="Strong" TYPE="PIN"/>
 					<RESOURCE NAME="Port_0_0_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
-					<RESOURCE NAME="Port_0_1" VALUE="StdCPU" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_1" VALUE="AnalogInput" TYPE="PIN">
+						<PIN_VALUE_LIST>
+							<PIN_VALUE NAME="AnalogInput"/>
+						</PIN_VALUE_LIST>
+					</RESOURCE>
 					<RESOURCE NAME="Port_0_1_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_0_1_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
-					<RESOURCE NAME="Port_0_2" VALUE="StdCPU" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_2" VALUE="AnalogInput" TYPE="PIN">
+						<PIN_VALUE_LIST>
+							<PIN_VALUE NAME="AnalogInput"/>
+						</PIN_VALUE_LIST>
+					</RESOURCE>
 					<RESOURCE NAME="Port_0_2_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_0_2_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
-					<RESOURCE NAME="Port_0_3" VALUE="StdCPU" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_3" VALUE="AnalogInput" TYPE="PIN">
+						<PIN_VALUE_LIST>
+							<PIN_VALUE NAME="AnalogInput"/>
+						</PIN_VALUE_LIST>
+					</RESOURCE>
 					<RESOURCE NAME="Port_0_3_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_0_3_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
-					<RESOURCE NAME="Port_0_4" VALUE="StdCPU" TYPE="PIN"/>
+					<RESOURCE NAME="Port_0_4" VALUE="AnalogInput" TYPE="PIN">
+						<PIN_VALUE_LIST>
+							<PIN_VALUE NAME="AnalogInput"/>
+						</PIN_VALUE_LIST>
+					</RESOURCE>
 					<RESOURCE NAME="Port_0_4_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_0_4_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
 					<RESOURCE NAME="Port_0_5" VALUE="StdCPU" TYPE="PIN"/>
@@ -1222,24 +1242,24 @@
 					<RESOURCE NAME="Port_1_4" VALUE="StdCPU" TYPE="PIN"/>
 					<RESOURCE NAME="Port_1_4_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_1_4_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
-					<RESOURCE NAME="Port_1_5" VALUE="StdCPU" TYPE="PIN"/>
-					<RESOURCE NAME="Port_1_5_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_5" VALUE="I2C SDA" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_5_Drive" VALUE="Open Drain Low" TYPE="PIN"/>
 					<RESOURCE NAME="Port_1_5_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
 					<RESOURCE NAME="Port_1_6" VALUE="StdCPU" TYPE="PIN"/>
 					<RESOURCE NAME="Port_1_6_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_1_6_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
-					<RESOURCE NAME="Port_1_7" VALUE="StdCPU" TYPE="PIN"/>
-					<RESOURCE NAME="Port_1_7_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_7" VALUE="I2C SCL" TYPE="PIN"/>
+					<RESOURCE NAME="Port_1_7_Drive" VALUE="Open Drain Low" TYPE="PIN"/>
 					<RESOURCE NAME="Port_1_7_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_0" VALUE="StdCPU" TYPE="PIN"/>
-					<RESOURCE NAME="Port_2_0_Drive" VALUE="High Z Analog" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_0_Drive" VALUE="Strong" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_0_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_1" VALUE="StdCPU" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_1_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_1_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_2" VALUE="StdCPU" TYPE="PIN"/>
-					<RESOURCE NAME="Port_2_2_Drive" VALUE="High Z Analog" TYPE="PIN"/>
-					<RESOURCE NAME="Port_2_2_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_2_Drive" VALUE="Pull Up" TYPE="PIN"/>
+					<RESOURCE NAME="Port_2_2_Interrupt" VALUE="ChangeFromRead" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_3" VALUE="StdCPU" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_3_Drive" VALUE="High Z Analog" TYPE="PIN"/>
 					<RESOURCE NAME="Port_2_3_Interrupt" VALUE="DisableInt" TYPE="PIN"/>
@@ -1415,8 +1435,8 @@
 					<RESOURCE NAME="Row_3_LogicTable_Select_1" VALUE="A" TYPE="ROW_LOGIC_TABLE_SELECT"/>
 					<RESOURCE NAME="Row_3_LogicTable_Select_2" VALUE="A" TYPE="ROW_LOGIC_TABLE_SELECT"/>
 					<RESOURCE NAME="Row_3_LogicTable_Select_3" VALUE="A" TYPE="ROW_LOGIC_TABLE_SELECT"/>
-					<RESOURCE NAME="Row_3_Output_0" VALUE="" TYPE="ROW_BUS"/>
-					<RESOURCE NAME="Row_3_Output_0_Drive_0" VALUE="Off" TYPE="ROW_OUTPUT_DRIVE"/>
+					<RESOURCE NAME="Row_3_Output_0" VALUE="DCB32" TYPE="ROW_BUS"/>
+					<RESOURCE NAME="Row_3_Output_0_Drive_0" VALUE="GlobalOutEven_0" TYPE="ROW_OUTPUT_DRIVE"/>
 					<RESOURCE NAME="Row_3_Output_0_Drive_1" VALUE="Off" TYPE="ROW_OUTPUT_DRIVE"/>
 					<RESOURCE NAME="Row_3_Output_0_Drive_2" VALUE="Off" TYPE="ROW_OUTPUT_DRIVE"/>
 					<RESOURCE NAME="Row_3_Output_0_Drive_3" VALUE="Off" TYPE="ROW_OUTPUT_DRIVE"/>
@@ -1449,7 +1469,7 @@
 					<REGISTER NAME="AnalogClockSelect1" VALUE="0" ADDR="161" DATASHEET_NAME="CLK_CR1"/>
 					<REGISTER NAME="AnalogClockSelect2" VALUE="0" ADDR="169" DATASHEET_NAME="CLK_CR2"/>
 					<REGISTER NAME="AnalogColumnClockSelect" VALUE="0" ADDR="160" DATASHEET_NAME="CLK_CR0"/>
-					<REGISTER NAME="AnalogColumnInputSelect" VALUE="28" ADDR="60" DATASHEET_NAME="AMX_IN"/>
+					<REGISTER NAME="AnalogColumnInputSelect" VALUE="94" ADDR="60" DATASHEET_NAME="AMX_IN"/>
 					<REGISTER NAME="AnalogComparatorControl1" VALUE="0" ADDR="66" DATASHEET_NAME="CMP_CR1"/>
 					<REGISTER NAME="AnalogIOControl_0" VALUE="0" ADDR="162" DATASHEET_NAME="ABF_CR0"/>
 					<REGISTER NAME="AnalogLUTControl0" VALUE="33" ADDR="167" DATASHEET_NAME="ALT_CR0"/>
@@ -1470,27 +1490,27 @@
 					<REGISTER NAME="OscillatorControl_3" VALUE="119" ADDR="1df" DATASHEET_NAME="OSC_CR3"/>
 					<REGISTER NAME="OscillatorControl_4" VALUE="1" ADDR="1de" DATASHEET_NAME="OSC_CR4"/>
 					<REGISTER NAME="OscillatorGlobalBusEnableControl" VALUE="0" ADDR="1dd" DATASHEET_NAME="OSC_GO_EN"/>
-					<REGISTER NAME="Port_0_DriveMode_0" VALUE="0" ADDR="100" DATASHEET_NAME="PRT0DM0"/>
-					<REGISTER NAME="Port_0_DriveMode_1" VALUE="ff" ADDR="101" DATASHEET_NAME="PRT0DM1"/>
-					<REGISTER NAME="Port_0_DriveMode_2" VALUE="ff" ADDR="3" DATASHEET_NAME="PRT0DM2"/>
-					<REGISTER NAME="Port_0_GlobalSelect" VALUE="0" ADDR="2" DATASHEET_NAME="PRT0GS"/>
+					<REGISTER NAME="Port_0_DriveMode_0" VALUE="1" ADDR="100" DATASHEET_NAME="PRT0DM0"/>
+					<REGISTER NAME="Port_0_DriveMode_1" VALUE="fe" ADDR="101" DATASHEET_NAME="PRT0DM1"/>
+					<REGISTER NAME="Port_0_DriveMode_2" VALUE="fe" ADDR="3" DATASHEET_NAME="PRT0DM2"/>
+					<REGISTER NAME="Port_0_GlobalSelect" VALUE="1" ADDR="2" DATASHEET_NAME="PRT0GS"/>
 					<REGISTER NAME="Port_0_IntCtrl_0" VALUE="0" ADDR="102" DATASHEET_NAME="PRT0IC0"/>
 					<REGISTER NAME="Port_0_IntCtrl_1" VALUE="0" ADDR="103" DATASHEET_NAME="PRT0IC1"/>
 					<REGISTER NAME="Port_0_IntEn" VALUE="0" ADDR="1" DATASHEET_NAME="PRT0IE"/>
-					<REGISTER NAME="Port_1_DriveMode_0" VALUE="0" ADDR="104" DATASHEET_NAME="PRT1DM0"/>
+					<REGISTER NAME="Port_1_DriveMode_0" VALUE="a0" ADDR="104" DATASHEET_NAME="PRT1DM0"/>
 					<REGISTER NAME="Port_1_DriveMode_1" VALUE="ff" ADDR="105" DATASHEET_NAME="PRT1DM1"/>
 					<REGISTER NAME="Port_1_DriveMode_2" VALUE="ff" ADDR="7" DATASHEET_NAME="PRT1DM2"/>
 					<REGISTER NAME="Port_1_GlobalSelect" VALUE="0" ADDR="6" DATASHEET_NAME="PRT1GS"/>
 					<REGISTER NAME="Port_1_IntCtrl_0" VALUE="0" ADDR="106" DATASHEET_NAME="PRT1IC0"/>
 					<REGISTER NAME="Port_1_IntCtrl_1" VALUE="0" ADDR="107" DATASHEET_NAME="PRT1IC1"/>
 					<REGISTER NAME="Port_1_IntEn" VALUE="0" ADDR="5" DATASHEET_NAME="PRT1IE"/>
-					<REGISTER NAME="Port_2_DriveMode_0" VALUE="0" ADDR="108" DATASHEET_NAME="PRT2DM0"/>
-					<REGISTER NAME="Port_2_DriveMode_1" VALUE="ff" ADDR="109" DATASHEET_NAME="PRT2DM1"/>
-					<REGISTER NAME="Port_2_DriveMode_2" VALUE="ff" ADDR="b" DATASHEET_NAME="PRT2DM2"/>
+					<REGISTER NAME="Port_2_DriveMode_0" VALUE="5" ADDR="108" DATASHEET_NAME="PRT2DM0"/>
+					<REGISTER NAME="Port_2_DriveMode_1" VALUE="fe" ADDR="109" DATASHEET_NAME="PRT2DM1"/>
+					<REGISTER NAME="Port_2_DriveMode_2" VALUE="fa" ADDR="b" DATASHEET_NAME="PRT2DM2"/>
 					<REGISTER NAME="Port_2_GlobalSelect" VALUE="0" ADDR="a" DATASHEET_NAME="PRT2GS"/>
-					<REGISTER NAME="Port_2_IntCtrl_0" VALUE="0" ADDR="10a" DATASHEET_NAME="PRT2IC0"/>
-					<REGISTER NAME="Port_2_IntCtrl_1" VALUE="0" ADDR="10b" DATASHEET_NAME="PRT2IC1"/>
-					<REGISTER NAME="Port_2_IntEn" VALUE="0" ADDR="9" DATASHEET_NAME="PRT2IE"/>
+					<REGISTER NAME="Port_2_IntCtrl_0" VALUE="4" ADDR="10a" DATASHEET_NAME="PRT2IC0"/>
+					<REGISTER NAME="Port_2_IntCtrl_1" VALUE="4" ADDR="10b" DATASHEET_NAME="PRT2IC1"/>
+					<REGISTER NAME="Port_2_IntEn" VALUE="4" ADDR="9" DATASHEET_NAME="PRT2IE"/>
 					<REGISTER NAME="Port_3_DriveMode_0" VALUE="0" ADDR="10c" DATASHEET_NAME="PRT3DM0"/>
 					<REGISTER NAME="Port_3_DriveMode_1" VALUE="0" ADDR="10d" DATASHEET_NAME="PRT3DM1"/>
 					<REGISTER NAME="Port_3_DriveMode_2" VALUE="0" ADDR="f" DATASHEET_NAME="PRT3DM2"/>
@@ -1552,7 +1572,7 @@
 					<REGISTER NAME="Row_3_LogicInputAMux" VALUE="30" ADDR="ca" DATASHEET_NAME="RDI3IS"/>
 					<REGISTER NAME="Row_3_LogicSelect_0" VALUE="33" ADDR="cb" DATASHEET_NAME="RDI3LT0"/>
 					<REGISTER NAME="Row_3_LogicSelect_1" VALUE="33" ADDR="cc" DATASHEET_NAME="RDI3LT1"/>
-					<REGISTER NAME="Row_3_OutputDrive_0" VALUE="0" ADDR="cd" DATASHEET_NAME="RDI3SRO0"/>
+					<REGISTER NAME="Row_3_OutputDrive_0" VALUE="1" ADDR="cd" DATASHEET_NAME="RDI3SRO0"/>
 					<REGISTER NAME="Row_3_OutputDrive_1" VALUE="0" ADDR="ce" DATASHEET_NAME="RDI3SRO1"/>
 					<REGISTER NAME="TMP_DR0" VALUE="0" ADDR="6c" DATASHEET_NAME="TMP_DR0"/>
 					<REGISTER NAME="TMP_DR1" VALUE="0" ADDR="6d" DATASHEET_NAME="TMP_DR1"/>
@@ -1563,15 +1583,15 @@
 				<PIN_DESC_LIST>
 					<PIN_DESC PIN_NUMBER="1" PIN_LABEL="P0[7]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_7" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="2" PIN_LABEL="P0[5]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_5" PIN_INTERRUPT="DisableInt"/>
-					<PIN_DESC PIN_NUMBER="3" PIN_LABEL="P0[3]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_3" PIN_INTERRUPT="DisableInt"/>
-					<PIN_DESC PIN_NUMBER="4" PIN_LABEL="P0[1]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_1" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="3" PIN_LABEL="P0[3]" PIN_SELECT="AnalogInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="ADC2" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="4" PIN_LABEL="P0[1]" PIN_SELECT="AnalogInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="ADC0" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="5" PIN_LABEL="P2[7]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_7" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="6" PIN_LABEL="P2[5]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_5" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="7" PIN_LABEL="P2[3]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_3" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="8" PIN_LABEL="P2[1]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_1" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="9" PIN_LABEL="SMP" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
-					<PIN_DESC PIN_NUMBER="10" PIN_LABEL="P1[7]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_7" PIN_INTERRUPT="DisableInt"/>
-					<PIN_DESC PIN_NUMBER="11" PIN_LABEL="P1[5]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_5" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="10" PIN_LABEL="P1[7]" PIN_SELECT="I2C SCL" PIN_DRIVE="Open Drain Low" PIN_DATA="" PIN_CUSTOM_NAME="I2CHWSCL" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="11" PIN_LABEL="P1[5]" PIN_SELECT="I2C SDA" PIN_DRIVE="Open Drain Low" PIN_DATA="" PIN_CUSTOM_NAME="I2CHWSDA" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="12" PIN_LABEL="P1[3]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_3" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="13" PIN_LABEL="P1[1]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_1" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="14" PIN_LABEL="VSS" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
@@ -1580,13 +1600,13 @@
 					<PIN_DESC PIN_NUMBER="17" PIN_LABEL="P1[4]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_4" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="18" PIN_LABEL="P1[6]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_1_6" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="19" PIN_LABEL="XRES" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
-					<PIN_DESC PIN_NUMBER="20" PIN_LABEL="P2[0]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_0" PIN_INTERRUPT="DisableInt"/>
-					<PIN_DESC PIN_NUMBER="21" PIN_LABEL="P2[2]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_2" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="20" PIN_LABEL="P2[0]" PIN_SELECT="StdCPU" PIN_DRIVE="Strong" PIN_DATA="" PIN_CUSTOM_NAME="LED" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="21" PIN_LABEL="P2[2]" PIN_SELECT="StdCPU" PIN_DRIVE="Pull Up" PIN_DATA="" PIN_CUSTOM_NAME="Button" PIN_INTERRUPT="ChangeFromRead"/>
 					<PIN_DESC PIN_NUMBER="22" PIN_LABEL="P2[4]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_4" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="23" PIN_LABEL="P2[6]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_2_6" PIN_INTERRUPT="DisableInt"/>
-					<PIN_DESC PIN_NUMBER="24" PIN_LABEL="P0[0]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_0" PIN_INTERRUPT="DisableInt"/>
-					<PIN_DESC PIN_NUMBER="25" PIN_LABEL="P0[2]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_2" PIN_INTERRUPT="DisableInt"/>
-					<PIN_DESC PIN_NUMBER="26" PIN_LABEL="P0[4]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_4" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="24" PIN_LABEL="P0[0]" PIN_SELECT="GlobalOutEven_0" PIN_DRIVE="Strong" PIN_DATA="" PIN_CUSTOM_NAME="TX8" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="25" PIN_LABEL="P0[2]" PIN_SELECT="AnalogInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="ADC1" PIN_INTERRUPT="DisableInt"/>
+					<PIN_DESC PIN_NUMBER="26" PIN_LABEL="P0[4]" PIN_SELECT="AnalogInput" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="ADC3" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="27" PIN_LABEL="P0[6]" PIN_SELECT="StdCPU" PIN_DRIVE="High Z Analog" PIN_DATA="" PIN_CUSTOM_NAME="Port_0_6" PIN_INTERRUPT="DisableInt"/>
 					<PIN_DESC PIN_NUMBER="28" PIN_LABEL="VDD" PIN_SELECT="" PIN_DRIVE="" PIN_DATA="" PIN_CUSTOM_NAME="" PIN_INTERRUPT=""/>
 				</PIN_DESC_LIST>
