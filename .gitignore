@@ -1,5 +1,6 @@
-obj/*
-backup/*
+*/*/*/obj/
+*/*/*/lib/obj/
+*/*/*/backup/
 *.log
 *.lock
 *~
