@@ -1,6 +1,7 @@
-*/*/*/obj/
-*/*/*/lib/obj/
-*/*/*/backup/
+*/*/*/lib
+*/*/*/obj
+*/*/*/output
+BuildMsg.txt
 *.log
 *.lock
 *~
