@@ -142,7 +142,7 @@ ENDIF
     reti
 
     org   20h                      ;PSoC Block DBB00 Interrupt Vector
-    ljmp	_ADCINC_1_ADConversion_ISR
+    ljmp	_ADCINC_ADConversion_ISR
     reti
 
     org   24h                      ;PSoC Block DBB01 Interrupt Vector
@@ -194,7 +194,7 @@ ENDIF
     reti
 
     org   54h                      ;PSoC Block DBB31 Interrupt Vector
-    ljmp	_Timer16_1_ISR
+    ljmp	_Timer16_ISR
     reti
 
     org   58h                      ;PSoC Block DCB32 Interrupt Vector
