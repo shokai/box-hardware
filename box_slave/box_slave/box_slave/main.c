@@ -29,15 +29,18 @@ char buf[6];
 void main(void)
 {
     M8C_EnableGInt;
+    M8C_EnableIntMask(INT_MSK0, INT_MSK0_GPIO);
+
     AMUX4_Start();
     PGA_1_Start(PGA_1_HIGHPOWER);
     ADCINC_Start(ADCINC_HIGHPOWER);
     TX8_Start(TX8_PARITY_NONE);
 
+    LED_DBG_ON();
     TX8_CPutString("I2C slave addr:");
     TX8_PutSHexByte(I2CHW_SLAVE_ADDR);
     TX8_PutCRLF();
-    LED_DBG_ON();
+    LED_DBG_OFF();
     for(;;){
         for(ad_pin = 0; ad_pin < 4; ad_pin++){
             ad = get_adc(ad_pin);
@@ -50,6 +53,7 @@ void main(void)
     }
 }
 
+
 // AMUX4_PORT0_0 => 0x00
 // AMUX4_PORT0_2 => 0x01
 // AMUX4_PORT0_4 => 0x02
@@ -59,4 +63,18 @@ int get_adc(BYTE amux_channel){
     ADCINC_GetSamples(0);
     while(!ADCINC_fIsDataAvailable());
     return ADCINC_iClearFlagGetData();
+}
+
+
+// I/OÉsÉìèÛë‘ïœâªäÑÇËçûÇ›
+#pragma interrupt_handler INT_GPIO
+void INT_GPIO(void){
+  if(BTN_PORT & BTN_BIT){ // É{É^ÉìÇ™âüÇ≥ÇÍÇƒÇ¢ÇÈéû
+    LED_DBG_ON();
+    TX8_CPutString("DOWN\r\n");
+  }
+  else{
+    LED_DBG_OFF();
+    TX8_CPutString("UP\r\n");
+  }
 }
