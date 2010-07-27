@@ -63,6 +63,16 @@ ADC3_IntCtrl_0_ADDR:	equ	102h
 ADC3_IntCtrl_1_ADDR:	equ	103h
 ADC3_IntEn_ADDR:	equ	1h
 ADC3_MASK:	equ	40h
+; TX8 address and mask equates
+TX8_Data_ADDR:	equ	4h
+TX8_DriveMode_0_ADDR:	equ	104h
+TX8_DriveMode_1_ADDR:	equ	105h
+TX8_DriveMode_2_ADDR:	equ	7h
+TX8_GlobalSelect_ADDR:	equ	6h
+TX8_IntCtrl_0_ADDR:	equ	106h
+TX8_IntCtrl_1_ADDR:	equ	107h
+TX8_IntEn_ADDR:	equ	5h
+TX8_MASK:	equ	1h
 ; I2CHWSDA address and mask equates
 I2CHWSDA_Data_ADDR:	equ	4h
 I2CHWSDA_DriveMode_0_ADDR:	equ	104h
@@ -83,6 +93,16 @@ I2CHWSCL_IntCtrl_0_ADDR:	equ	106h
 I2CHWSCL_IntCtrl_1_ADDR:	equ	107h
 I2CHWSCL_IntEn_ADDR:	equ	5h
 I2CHWSCL_MASK:	equ	80h
+; LED_DBG address and mask equates
+LED_DBG_Data_ADDR:	equ	8h
+LED_DBG_DriveMode_0_ADDR:	equ	108h
+LED_DBG_DriveMode_1_ADDR:	equ	109h
+LED_DBG_DriveMode_2_ADDR:	equ	bh
+LED_DBG_GlobalSelect_ADDR:	equ	ah
+LED_DBG_IntCtrl_0_ADDR:	equ	10ah
+LED_DBG_IntCtrl_1_ADDR:	equ	10bh
+LED_DBG_IntEn_ADDR:	equ	9h
+LED_DBG_MASK:	equ	1h
 ; LED address and mask equates
 LED_Data_ADDR:	equ	8h
 LED_DriveMode_0_ADDR:	equ	108h
@@ -92,4 +112,4 @@ LED_GlobalSelect_ADDR:	equ	ah
 LED_IntCtrl_0_ADDR:	equ	10ah
 LED_IntCtrl_1_ADDR:	equ	10bh
 LED_IntEn_ADDR:	equ	9h
-LED_MASK:	equ	1h
+LED_MASK:	equ	2h

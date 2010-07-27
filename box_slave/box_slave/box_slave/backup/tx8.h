@@ -76,8 +76,8 @@ extern BYTE bTX8_ReadTxStatus(void);
 //------------------------------------
 // Transmitter Interrupt masks
 //------------------------------------
-#define TX8_INT_REG_ADDR                       ( 0x0df )
-#define TX8_bINT_MASK                          ( 0x40 )
+#define TX8_INT_REG_ADDR                       ( 0x0e1 )
+#define TX8_bINT_MASK                          ( 0x04 )
 
 // Old style defines, do not use.  These
 // will be removed in a future release.
@@ -92,17 +92,17 @@ extern BYTE bTX8_ReadTxStatus(void);
 //-------------------------------------------------
 // Register Addresses for TX8
 //-------------------------------------------------
-#pragma ioport  TX8_CONTROL_REG:    0x05b                  // Control register
+#pragma ioport  TX8_CONTROL_REG:    0x02b                  // Control register
 BYTE            TX8_CONTROL_REG;
-#pragma ioport  TX8_TX_SHIFT_REG:   0x058                  // TX Shift Register register
+#pragma ioport  TX8_TX_SHIFT_REG:   0x028                  // TX Shift Register register
 BYTE            TX8_TX_SHIFT_REG;
-#pragma ioport  TX8_TX_BUFFER_REG:  0x059                  // TX Buffer Register
+#pragma ioport  TX8_TX_BUFFER_REG:  0x029                  // TX Buffer Register
 BYTE            TX8_TX_BUFFER_REG;
-#pragma ioport  TX8_FUNC_REG:   0x158                      // Function register
+#pragma ioport  TX8_FUNC_REG:   0x128                      // Function register
 BYTE            TX8_FUNC_REG;
-#pragma ioport  TX8_INPUT_REG:  0x159                      // Input register
+#pragma ioport  TX8_INPUT_REG:  0x129                      // Input register
 BYTE            TX8_INPUT_REG;
-#pragma ioport  TX8_OUTPUT_REG: 0x15a                      // Output register
+#pragma ioport  TX8_OUTPUT_REG: 0x12a                      // Output register
 BYTE            TX8_OUTPUT_REG;
 
 // end of file TX8.h

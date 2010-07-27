@@ -25,6 +25,11 @@ LoadConfigTBL_box_slave_Bank0:
 	db		72h, 21h		;PGA_1_GAIN_CR1(ACB00CR1)
 	db		73h, 20h		;PGA_1_GAIN_CR2(ACB00CR2)
 	db		70h, 00h		;PGA_1_GAIN_CR3(ACB00CR3)
+;  Instance name TX8, User Module TX8
+;       Instance name TX8, Block Name TX8(DCB02)
+	db		2bh, 00h		;TX8_CONTROL_REG  (DCB02CR0)
+	db		29h, 00h		;TX8_TX_BUFFER_REG(DCB02DR1)
+	db		2ah, 00h		;TX8_(DCB02DR2)
 ;  Instance name Timer16, User Module Timer16
 ;       Instance name Timer16, Block Name TIMER16_LSB(DBB30)
 	db		53h, 00h		;Timer16_CONTROL_LSB_REG(DBB30CR0)
@@ -47,7 +52,7 @@ LoadConfigTBL_box_slave_Bank0:
 	db		b2h, 00h		; Row_0_LogicInputAMux register (RDI0IS)
 	db		b3h, 33h		; Row_0_LogicSelect_0 register (RDI0LT0)
 	db		b4h, 33h		; Row_0_LogicSelect_1 register (RDI0LT1)
-	db		b5h, 00h		; Row_0_OutputDrive_0 register (RDI0SRO0)
+	db		b5h, 04h		; Row_0_OutputDrive_0 register (RDI0SRO0)
 	db		b6h, 00h		; Row_0_OutputDrive_1 register (RDI0SRO1)
 	db		b8h, 55h		; Row_1_InputMux register (RDI1RI)
 	db		b9h, 00h		; Row_1_InputSync register (RDI1SYN)
@@ -86,6 +91,11 @@ LoadConfigTBL_box_slave_Bank1:
 ;  Instance name I2CHW, User Module I2CHW
 ;  Instance name PGA_1, User Module PGA
 ;       Instance name PGA_1, Block Name GAIN(ACB00)
+;  Instance name TX8, User Module TX8
+;       Instance name TX8, Block Name TX8(DCB02)
+	db		28h, 1dh		;TX8_FUNC_REG     (DCB02FN)
+	db		29h, 01h		;TX8_INPUT_REG    (DCB02IN)
+	db		2ah, 84h		;TX8_OUTPUT_REG   (DCB02OU)
 ;  Instance name Timer16, User Module Timer16
 ;       Instance name Timer16, Block Name TIMER16_LSB(DBB30)
 	db		50h, 00h		;Timer16_FUNC_LSB_REG(DBB30FN)
@@ -129,21 +139,21 @@ LoadConfigTBL_box_slave_Ordered:
 	M8C_SetBank0
 	mov	reg[01h], 00h		; Port_0_IntEn register (PRT0IE)
 	M8C_SetBank1
-	mov	reg[04h], a0h		; Port_1_DriveMode_0 register (PRT1DM0)
-	mov	reg[05h], ffh		; Port_1_DriveMode_1 register (PRT1DM1)
+	mov	reg[04h], a1h		; Port_1_DriveMode_0 register (PRT1DM0)
+	mov	reg[05h], feh		; Port_1_DriveMode_1 register (PRT1DM1)
 	M8C_SetBank0
-	mov	reg[07h], ffh		; Port_1_DriveMode_2 register (PRT1DM2)
-	mov	reg[06h], 00h		; Port_1_GlobalSelect register (PRT1GS)
+	mov	reg[07h], feh		; Port_1_DriveMode_2 register (PRT1DM2)
+	mov	reg[06h], 01h		; Port_1_GlobalSelect register (PRT1GS)
 	M8C_SetBank1
 	mov	reg[06h], 00h		; Port_1_IntCtrl_0 register (PRT1IC0)
 	mov	reg[07h], 00h		; Port_1_IntCtrl_1 register (PRT1IC1)
 	M8C_SetBank0
 	mov	reg[05h], 00h		; Port_1_IntEn register (PRT1IE)
 	M8C_SetBank1
-	mov	reg[08h], 05h		; Port_2_DriveMode_0 register (PRT2DM0)
-	mov	reg[09h], feh		; Port_2_DriveMode_1 register (PRT2DM1)
+	mov	reg[08h], 07h		; Port_2_DriveMode_0 register (PRT2DM0)
+	mov	reg[09h], fch		; Port_2_DriveMode_1 register (PRT2DM1)
 	M8C_SetBank0
-	mov	reg[0bh], fah		; Port_2_DriveMode_2 register (PRT2DM2)
+	mov	reg[0bh], f8h		; Port_2_DriveMode_2 register (PRT2DM2)
 	mov	reg[0ah], 00h		; Port_2_GlobalSelect register (PRT2GS)
 	M8C_SetBank1
 	mov	reg[0ah], 04h		; Port_2_IntCtrl_0 register (PRT2IC0)

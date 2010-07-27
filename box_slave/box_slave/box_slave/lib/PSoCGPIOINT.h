@@ -158,6 +158,24 @@ BYTE			I2CHWSCL_IntCtrl_1_ADDR;
 #pragma	ioport	I2CHWSCL_IntEn_ADDR:	0x5
 BYTE			I2CHWSCL_IntEn_ADDR;
 #define I2CHWSCL_MASK 0x80
+// LED_DBG address and mask defines
+#pragma	ioport	LED_DBG_Data_ADDR:	0x8
+BYTE			LED_DBG_Data_ADDR;
+#pragma	ioport	LED_DBG_DriveMode_0_ADDR:	0x108
+BYTE			LED_DBG_DriveMode_0_ADDR;
+#pragma	ioport	LED_DBG_DriveMode_1_ADDR:	0x109
+BYTE			LED_DBG_DriveMode_1_ADDR;
+#pragma	ioport	LED_DBG_DriveMode_2_ADDR:	0xb
+BYTE			LED_DBG_DriveMode_2_ADDR;
+#pragma	ioport	LED_DBG_GlobalSelect_ADDR:	0xa
+BYTE			LED_DBG_GlobalSelect_ADDR;
+#pragma	ioport	LED_DBG_IntCtrl_0_ADDR:	0x10a
+BYTE			LED_DBG_IntCtrl_0_ADDR;
+#pragma	ioport	LED_DBG_IntCtrl_1_ADDR:	0x10b
+BYTE			LED_DBG_IntCtrl_1_ADDR;
+#pragma	ioport	LED_DBG_IntEn_ADDR:	0x9
+BYTE			LED_DBG_IntEn_ADDR;
+#define LED_DBG_MASK 0x1
 // LED address and mask defines
 #pragma	ioport	LED_Data_ADDR:	0x8
 BYTE			LED_Data_ADDR;
@@ -175,4 +193,4 @@ BYTE			LED_IntCtrl_0_ADDR;
 BYTE			LED_IntCtrl_1_ADDR;
 #pragma	ioport	LED_IntEn_ADDR:	0x9
 BYTE			LED_IntEn_ADDR;
-#define LED_MASK 0x1
+#define LED_MASK 0x2

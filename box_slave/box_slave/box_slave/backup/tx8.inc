@@ -17,12 +17,12 @@ include "m8c.inc"
 ;---------------------------------------------------
 
 ;mask value for global int reg bit for TX instance
-TX8_bINT_MASK:        equ 40h
+TX8_bINT_MASK:        equ 04h
 ;TX8 interrupt address
-TX8_INT_REG:          equ 0dfh
+TX8_INT_REG:          equ 0e1h
 
 ; Old equate, will be removed in future release, Do not use.
-bTX8_INT_MASK:        equ 40h
+bTX8_INT_MASK:        equ 04h
 
 
 ;------------------------------------
@@ -53,11 +53,11 @@ TX8_TX_BUFFER_EMPTY:       equ   10h
 ;----------------------------------------------------
 ;  Register Address Constants for TX8
 ;----------------------------------------------------
-TX8_CONTROL_REG:    equ 5bh                      ; Control register
-TX8_TX_SHIFT_REG:   equ 58h                      ; TX Shift Register register
-TX8_TX_BUFFER_REG:  equ 59h                      ; TX Buffer Register
-TX8_FUNC_REG:   equ 58h                          ; Function register
-TX8_INPUT_REG:  equ 59h                          ; Input register
-TX8_OUTPUT_REG: equ 5ah                          ; Output register
+TX8_CONTROL_REG:    equ 2bh                      ; Control register
+TX8_TX_SHIFT_REG:   equ 28h                      ; TX Shift Register register
+TX8_TX_BUFFER_REG:  equ 29h                      ; TX Buffer Register
+TX8_FUNC_REG:   equ 28h                          ; Function register
+TX8_INPUT_REG:  equ 29h                          ; Input register
+TX8_OUTPUT_REG: equ 2ah                          ; Output register
 
 ; end of file TX8.inc

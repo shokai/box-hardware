@@ -8,8 +8,10 @@
 #define sbi(BYTE,BIT) (BYTE |= _BV(BIT))
 #define cbi(BYTE,BIT) (BYTE &= ~_BV(BIT))
 
-#define LED_ON() sbi(PRT2DR, 0) // LED
-#define LED_OFF() cbi(PRT2DR, 0)
+#define LED_ON() sbi(PRT2DR, 1) // LED
+#define LED_OFF() cbi(PRT2DR, 1)
+#define LED_DBG_ON() sbi(PRT2DR, 0) // LED
+#define LED_DBG_OFF() cbi(PRT2DR, 0)
 #define BTN_PORT PRT2DR // push button
 #define BTN_BIT _BV(2)
 
@@ -32,7 +34,7 @@ void main(void)
     AMUX4_Start();
     PGA_1_Start(PGA_1_HIGHPOWER);
     ADCINC_Start(ADCINC_HIGHPOWER);
-    LED_ON();
+    LED_DBG_ON();
     for(;;){
         ad = get_adc(0);
     }
