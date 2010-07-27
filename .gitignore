@@ -1,4 +1,4 @@
-*/*/*/lib
+*/*/*/lib/obj
 */*/*/obj
 */*/*/output
 BuildMsg.txt
@@ -8,3 +8,4 @@ BuildMsg.txt
 *.bak
 *.pdb
 Thumbs.db
+*.a
