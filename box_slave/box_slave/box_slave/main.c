@@ -34,7 +34,8 @@ void main(void)
     ADCINC_Start(ADCINC_HIGHPOWER);
     TX8_Start(TX8_PARITY_NONE);
 
-    TX8_CPutString("start");
+    TX8_CPutString("I2C slave addr:");
+    TX8_PutSHexByte(I2CHW_SLAVE_ADDR);
     TX8_PutCRLF();
     LED_DBG_ON();
     for(;;){
