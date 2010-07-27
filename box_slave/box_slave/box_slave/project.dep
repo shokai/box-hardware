@@ -8,7 +8,11 @@
    ./lib/I2CHWS~1.H ./lib/PGA_1.h ./lib/PSoCAPI.h ./lib/TX8.h\
    ./lib/Timer16.h\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/M8C.h\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.h
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/_const.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/limits.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/stdlib.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/string.h
 ./lib/obj/adcinc.o :  ./lib/ADCINC.inc\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
