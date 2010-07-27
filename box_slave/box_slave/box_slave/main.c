@@ -45,7 +45,7 @@ void main(void)
     TX8_Start(TX8_PARITY_NONE);
 
     LED_DBG_ON();
-    TX8_CPutString("I2C slave addr:");
+    TX8_CPutString("I2C slave addr:0x");
     TX8_PutSHexByte(I2CHW_SLAVE_ADDR);
     TX8_PutCRLF();
     LED_DBG_OFF();

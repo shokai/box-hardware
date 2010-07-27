@@ -57,6 +57,8 @@ PSoC_GPIO_ISR:
    ; Insert your custom code below this banner
    ;---------------------------------------------------
 
+	ljmp _INT_GPIO
+
    ;---------------------------------------------------
    ; Insert your custom code above this banner
    ;---------------------------------------------------

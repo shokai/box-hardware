@@ -63,16 +63,36 @@ ADC3_IntCtrl_0_ADDR:	equ	102h
 ADC3_IntCtrl_1_ADDR:	equ	103h
 ADC3_IntEn_ADDR:	equ	1h
 ADC3_MASK:	equ	40h
-; TX8 address and mask equates
-TX8_Data_ADDR:	equ	4h
-TX8_DriveMode_0_ADDR:	equ	104h
-TX8_DriveMode_1_ADDR:	equ	105h
-TX8_DriveMode_2_ADDR:	equ	7h
-TX8_GlobalSelect_ADDR:	equ	6h
-TX8_IntCtrl_0_ADDR:	equ	106h
-TX8_IntCtrl_1_ADDR:	equ	107h
-TX8_IntEn_ADDR:	equ	5h
-TX8_MASK:	equ	1h
+; SDATA address and mask equates
+SDATA_Data_ADDR:	equ	4h
+SDATA_DriveMode_0_ADDR:	equ	104h
+SDATA_DriveMode_1_ADDR:	equ	105h
+SDATA_DriveMode_2_ADDR:	equ	7h
+SDATA_GlobalSelect_ADDR:	equ	6h
+SDATA_IntCtrl_0_ADDR:	equ	106h
+SDATA_IntCtrl_1_ADDR:	equ	107h
+SDATA_IntEn_ADDR:	equ	5h
+SDATA_MASK:	equ	1h
+; SCLK address and mask equates
+SCLK_Data_ADDR:	equ	4h
+SCLK_DriveMode_0_ADDR:	equ	104h
+SCLK_DriveMode_1_ADDR:	equ	105h
+SCLK_DriveMode_2_ADDR:	equ	7h
+SCLK_GlobalSelect_ADDR:	equ	6h
+SCLK_IntCtrl_0_ADDR:	equ	106h
+SCLK_IntCtrl_1_ADDR:	equ	107h
+SCLK_IntEn_ADDR:	equ	5h
+SCLK_MASK:	equ	2h
+; TXi8 address and mask equates
+TXi8_Data_ADDR:	equ	4h
+TXi8_DriveMode_0_ADDR:	equ	104h
+TXi8_DriveMode_1_ADDR:	equ	105h
+TXi8_DriveMode_2_ADDR:	equ	7h
+TXi8_GlobalSelect_ADDR:	equ	6h
+TXi8_IntCtrl_0_ADDR:	equ	106h
+TXi8_IntCtrl_1_ADDR:	equ	107h
+TXi8_IntEn_ADDR:	equ	5h
+TXi8_MASK:	equ	4h
 ; I2CHWSDA address and mask equates
 I2CHWSDA_Data_ADDR:	equ	4h
 I2CHWSDA_DriveMode_0_ADDR:	equ	104h

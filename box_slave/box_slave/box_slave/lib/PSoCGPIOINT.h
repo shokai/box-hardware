@@ -104,24 +104,60 @@ BYTE			ADC3_IntCtrl_1_ADDR;
 #pragma	ioport	ADC3_IntEn_ADDR:	0x1
 BYTE			ADC3_IntEn_ADDR;
 #define ADC3_MASK 0x40
-// TX8 address and mask defines
-#pragma	ioport	TX8_Data_ADDR:	0x4
-BYTE			TX8_Data_ADDR;
-#pragma	ioport	TX8_DriveMode_0_ADDR:	0x104
-BYTE			TX8_DriveMode_0_ADDR;
-#pragma	ioport	TX8_DriveMode_1_ADDR:	0x105
-BYTE			TX8_DriveMode_1_ADDR;
-#pragma	ioport	TX8_DriveMode_2_ADDR:	0x7
-BYTE			TX8_DriveMode_2_ADDR;
-#pragma	ioport	TX8_GlobalSelect_ADDR:	0x6
-BYTE			TX8_GlobalSelect_ADDR;
-#pragma	ioport	TX8_IntCtrl_0_ADDR:	0x106
-BYTE			TX8_IntCtrl_0_ADDR;
-#pragma	ioport	TX8_IntCtrl_1_ADDR:	0x107
-BYTE			TX8_IntCtrl_1_ADDR;
-#pragma	ioport	TX8_IntEn_ADDR:	0x5
-BYTE			TX8_IntEn_ADDR;
-#define TX8_MASK 0x1
+// SDATA address and mask defines
+#pragma	ioport	SDATA_Data_ADDR:	0x4
+BYTE			SDATA_Data_ADDR;
+#pragma	ioport	SDATA_DriveMode_0_ADDR:	0x104
+BYTE			SDATA_DriveMode_0_ADDR;
+#pragma	ioport	SDATA_DriveMode_1_ADDR:	0x105
+BYTE			SDATA_DriveMode_1_ADDR;
+#pragma	ioport	SDATA_DriveMode_2_ADDR:	0x7
+BYTE			SDATA_DriveMode_2_ADDR;
+#pragma	ioport	SDATA_GlobalSelect_ADDR:	0x6
+BYTE			SDATA_GlobalSelect_ADDR;
+#pragma	ioport	SDATA_IntCtrl_0_ADDR:	0x106
+BYTE			SDATA_IntCtrl_0_ADDR;
+#pragma	ioport	SDATA_IntCtrl_1_ADDR:	0x107
+BYTE			SDATA_IntCtrl_1_ADDR;
+#pragma	ioport	SDATA_IntEn_ADDR:	0x5
+BYTE			SDATA_IntEn_ADDR;
+#define SDATA_MASK 0x1
+// SCLK address and mask defines
+#pragma	ioport	SCLK_Data_ADDR:	0x4
+BYTE			SCLK_Data_ADDR;
+#pragma	ioport	SCLK_DriveMode_0_ADDR:	0x104
+BYTE			SCLK_DriveMode_0_ADDR;
+#pragma	ioport	SCLK_DriveMode_1_ADDR:	0x105
+BYTE			SCLK_DriveMode_1_ADDR;
+#pragma	ioport	SCLK_DriveMode_2_ADDR:	0x7
+BYTE			SCLK_DriveMode_2_ADDR;
+#pragma	ioport	SCLK_GlobalSelect_ADDR:	0x6
+BYTE			SCLK_GlobalSelect_ADDR;
+#pragma	ioport	SCLK_IntCtrl_0_ADDR:	0x106
+BYTE			SCLK_IntCtrl_0_ADDR;
+#pragma	ioport	SCLK_IntCtrl_1_ADDR:	0x107
+BYTE			SCLK_IntCtrl_1_ADDR;
+#pragma	ioport	SCLK_IntEn_ADDR:	0x5
+BYTE			SCLK_IntEn_ADDR;
+#define SCLK_MASK 0x2
+// TXi8 address and mask defines
+#pragma	ioport	TXi8_Data_ADDR:	0x4
+BYTE			TXi8_Data_ADDR;
+#pragma	ioport	TXi8_DriveMode_0_ADDR:	0x104
+BYTE			TXi8_DriveMode_0_ADDR;
+#pragma	ioport	TXi8_DriveMode_1_ADDR:	0x105
+BYTE			TXi8_DriveMode_1_ADDR;
+#pragma	ioport	TXi8_DriveMode_2_ADDR:	0x7
+BYTE			TXi8_DriveMode_2_ADDR;
+#pragma	ioport	TXi8_GlobalSelect_ADDR:	0x6
+BYTE			TXi8_GlobalSelect_ADDR;
+#pragma	ioport	TXi8_IntCtrl_0_ADDR:	0x106
+BYTE			TXi8_IntCtrl_0_ADDR;
+#pragma	ioport	TXi8_IntCtrl_1_ADDR:	0x107
+BYTE			TXi8_IntCtrl_1_ADDR;
+#pragma	ioport	TXi8_IntEn_ADDR:	0x5
+BYTE			TXi8_IntEn_ADDR;
+#define TXi8_MASK 0x4
 // I2CHWSDA address and mask defines
 #pragma	ioport	I2CHWSDA_Data_ADDR:	0x4
 BYTE			I2CHWSDA_Data_ADDR;
