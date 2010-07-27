@@ -19,6 +19,10 @@
 #define LED_DBG_OFF() cbi(PRT2DR, 0)
 #define BTN_PORT PRT2DR // push button
 #define BTN_BIT _BV(2)
+#define BUF_SIZE 8
+BYTE buf_rx[BUF_SIZE]; // I2C buffer
+BYTE buf_tx[BUF_SIZE] = {'x'};
+BYTE i2c_status; // I2C status
 
 int get_adc(BYTE amux_channel);
 int ad;
@@ -31,6 +35,10 @@ void main(void)
     M8C_EnableGInt;
     M8C_EnableIntMask(INT_MSK0, INT_MSK0_GPIO);
 
+    I2CHW_Start();
+    I2CHW_EnableSlave();
+    I2CHW_EnableInt();
+    
     AMUX4_Start();
     PGA_1_Start(PGA_1_HIGHPOWER);
     ADCINC_Start(ADCINC_HIGHPOWER);
@@ -42,6 +50,18 @@ void main(void)
     TX8_PutCRLF();
     LED_DBG_OFF();
     for(;;){
+        // I2C
+        i2c_status = I2CHW_bReadI2CStatus();
+        if(i2c_status & I2CHW_WR_COMPLETE){ // master->slave
+            I2CHW_ClrWrStatus();
+            I2CHW_InitWrite(buf_rx, BUF_SIZE);
+        }
+        if(i2c_status & I2CHW_RD_COMPLETE){ // slave->master
+            I2CHW_ClrRdStatus();
+            I2CHW_InitRamRead(buf_tx, BUF_SIZE);
+        }
+
+        // ADC
         for(ad_pin = 0; ad_pin < 4; ad_pin++){
             ad = get_adc(ad_pin);
             weights[ad_pin] = ad;
