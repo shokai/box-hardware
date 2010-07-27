@@ -19,9 +19,7 @@ void main(void)
     int ad;
     M8C_EnableGInt;
     PGA_1_Start(3);
-    ADCINCVR_1_Start(ADCINCVR_1_HIGHPOWER);
-    //ADCINCVR_1_SetResolution(13);
-    ADCINCVR_1_GetSamples(0);
+    ADCINC_Start(ADCINCVR_1_HIGHPOWER);
     LED_ON();
 
     for(;;){
