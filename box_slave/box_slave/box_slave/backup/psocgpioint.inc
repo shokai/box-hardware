@@ -23,16 +23,6 @@ Button_IntCtrl_0_ADDR:	equ	10ah
 Button_IntCtrl_1_ADDR:	equ	10bh
 Button_IntEn_ADDR:	equ	9h
 Button_MASK:	equ	4h
-; TX8 address and mask equates
-TX8_Data_ADDR:	equ	0h
-TX8_DriveMode_0_ADDR:	equ	100h
-TX8_DriveMode_1_ADDR:	equ	101h
-TX8_DriveMode_2_ADDR:	equ	3h
-TX8_GlobalSelect_ADDR:	equ	2h
-TX8_IntCtrl_0_ADDR:	equ	102h
-TX8_IntCtrl_1_ADDR:	equ	103h
-TX8_IntEn_ADDR:	equ	1h
-TX8_MASK:	equ	1h
 ; ADC0 address and mask equates
 ADC0_Data_ADDR:	equ	0h
 ADC0_DriveMode_0_ADDR:	equ	100h
@@ -42,7 +32,7 @@ ADC0_GlobalSelect_ADDR:	equ	2h
 ADC0_IntCtrl_0_ADDR:	equ	102h
 ADC0_IntCtrl_1_ADDR:	equ	103h
 ADC0_IntEn_ADDR:	equ	1h
-ADC0_MASK:	equ	2h
+ADC0_MASK:	equ	1h
 ; ADC1 address and mask equates
 ADC1_Data_ADDR:	equ	0h
 ADC1_DriveMode_0_ADDR:	equ	100h
@@ -62,7 +52,7 @@ ADC2_GlobalSelect_ADDR:	equ	2h
 ADC2_IntCtrl_0_ADDR:	equ	102h
 ADC2_IntCtrl_1_ADDR:	equ	103h
 ADC2_IntEn_ADDR:	equ	1h
-ADC2_MASK:	equ	8h
+ADC2_MASK:	equ	10h
 ; ADC3 address and mask equates
 ADC3_Data_ADDR:	equ	0h
 ADC3_DriveMode_0_ADDR:	equ	100h
@@ -72,7 +62,7 @@ ADC3_GlobalSelect_ADDR:	equ	2h
 ADC3_IntCtrl_0_ADDR:	equ	102h
 ADC3_IntCtrl_1_ADDR:	equ	103h
 ADC3_IntEn_ADDR:	equ	1h
-ADC3_MASK:	equ	10h
+ADC3_MASK:	equ	40h
 ; I2CHWSDA address and mask equates
 I2CHWSDA_Data_ADDR:	equ	4h
 I2CHWSDA_DriveMode_0_ADDR:	equ	104h

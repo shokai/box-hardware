@@ -7,17 +7,17 @@ export LoadConfigTBL_box_slave_Bank0
 export LoadConfigTBL_box_slave_Ordered
 AREA lit(rom, rel)
 LoadConfigTBL_box_slave_Bank0:
-;  Instance name ADCINC_1, User Module ADCINC
-;       Instance name ADCINC_1, Block Name ADC(ASC10)
-	db		80h, 90h		;ADCINC_1_AtoDcr0(ASC10CR0)
-	db		81h, 00h		;ADCINC_1_AtoDcr1(ASC10CR1)
-	db		82h, 60h		;ADCINC_1_AtoDcr2(ASC10CR2)
-	db		83h, f0h		;ADCINC_1_AtoDcr3(ASC10CR3)
-;       Instance name ADCINC_1, Block Name PWM(DBB00)
-	db		23h, 00h		;ADCINC_1_PWMcr0(DBB00CR0)
-	db		21h, 00h		;ADCINC_1_PWMdr1(DBB00DR1)
-	db		22h, 01h		;ADCINC_1_PWMdr2(DBB00DR2)
-;  Instance name AMUX4_1, User Module AMUX4
+;  Instance name ADCINC, User Module ADCINC
+;       Instance name ADCINC, Block Name ADC(ASC10)
+	db		80h, 90h		;ADCINC_AtoDcr0(ASC10CR0)
+	db		81h, 00h		;ADCINC_AtoDcr1(ASC10CR1)
+	db		82h, 60h		;ADCINC_AtoDcr2(ASC10CR2)
+	db		83h, f0h		;ADCINC_AtoDcr3(ASC10CR3)
+;       Instance name ADCINC, Block Name PWM(DBB00)
+	db		23h, 00h		;ADCINC_PWMcr0(DBB00CR0)
+	db		21h, 00h		;ADCINC_PWMdr1(DBB00DR1)
+	db		22h, 01h		;ADCINC_PWMdr2(DBB00DR2)
+;  Instance name AMUX4, User Module AMUX4
 ;  Instance name I2CHW, User Module I2CHW
 ;  Instance name PGA_1, User Module PGA
 ;       Instance name PGA_1, Block Name GAIN(ACB00)
@@ -25,20 +25,15 @@ LoadConfigTBL_box_slave_Bank0:
 	db		72h, 21h		;PGA_1_GAIN_CR1(ACB00CR1)
 	db		73h, 20h		;PGA_1_GAIN_CR2(ACB00CR2)
 	db		70h, 00h		;PGA_1_GAIN_CR3(ACB00CR3)
-;  Instance name TX8, User Module TX8
-;       Instance name TX8, Block Name TX8(DCB32)
-	db		5bh, 00h		;TX8_CONTROL_REG  (DCB32CR0)
-	db		59h, 00h		;TX8_TX_BUFFER_REG(DCB32DR1)
-	db		5ah, 00h		;TX8_(DCB32DR2)
-;  Instance name Timer16_1, User Module Timer16
-;       Instance name Timer16_1, Block Name TIMER16_LSB(DBB30)
-	db		53h, 00h		;Timer16_1_CONTROL_LSB_REG(DBB30CR0)
-	db		51h, 00h		;Timer16_1_PERIOD_LSB_REG(DBB30DR1)
-	db		52h, 00h		;Timer16_1_COMPARE_LSB_REG(DBB30DR2)
-;       Instance name Timer16_1, Block Name TIMER16_MSB(DBB31)
-	db		57h, 04h		;Timer16_1_CONTROL_MSB_REG(DBB31CR0)
-	db		55h, 00h		;Timer16_1_PERIOD_MSB_REG(DBB31DR1)
-	db		56h, 00h		;Timer16_1_COMPARE_MSB_REG(DBB31DR2)
+;  Instance name Timer16, User Module Timer16
+;       Instance name Timer16, Block Name TIMER16_LSB(DBB30)
+	db		53h, 00h		;Timer16_CONTROL_LSB_REG(DBB30CR0)
+	db		51h, 00h		;Timer16_PERIOD_LSB_REG(DBB30DR1)
+	db		52h, 00h		;Timer16_COMPARE_LSB_REG(DBB30DR2)
+;       Instance name Timer16, Block Name TIMER16_MSB(DBB31)
+	db		57h, 04h		;Timer16_CONTROL_MSB_REG(DBB31CR0)
+	db		55h, 00h		;Timer16_PERIOD_MSB_REG(DBB31DR1)
+	db		56h, 00h		;Timer16_COMPARE_MSB_REG(DBB31DR2)
 ;  Global Register values Bank 0
 	db		60h, 94h		; AnalogColumnInputSelect register (AMX_IN)
 	db		66h, 00h		; AnalogComparatorControl1 register (CMP_CR1)
@@ -81,30 +76,25 @@ LoadConfigTBL_box_slave_Bank0:
 	db		6fh, 00h		; TMP_DR3 register (TMP_DR3)
 	db		ffh
 LoadConfigTBL_box_slave_Bank1:
-;  Instance name ADCINC_1, User Module ADCINC
-;       Instance name ADCINC_1, Block Name ADC(ASC10)
-;       Instance name ADCINC_1, Block Name PWM(DBB00)
-	db		20h, 31h		;ADCINC_1_PWMfn(DBB00FN)
-	db		21h, 15h		;ADCINC_1_PWMsl(DBB00IN)
-	db		22h, 40h		;ADCINC_1_PWMos(DBB00OU)
-;  Instance name AMUX4_1, User Module AMUX4
+;  Instance name ADCINC, User Module ADCINC
+;       Instance name ADCINC, Block Name ADC(ASC10)
+;       Instance name ADCINC, Block Name PWM(DBB00)
+	db		20h, 31h		;ADCINC_PWMfn(DBB00FN)
+	db		21h, 15h		;ADCINC_PWMsl(DBB00IN)
+	db		22h, 40h		;ADCINC_PWMos(DBB00OU)
+;  Instance name AMUX4, User Module AMUX4
 ;  Instance name I2CHW, User Module I2CHW
 ;  Instance name PGA_1, User Module PGA
 ;       Instance name PGA_1, Block Name GAIN(ACB00)
-;  Instance name TX8, User Module TX8
-;       Instance name TX8, Block Name TX8(DCB32)
-	db		58h, 1dh		;TX8_FUNC_REG     (DCB32FN)
-	db		59h, 01h		;TX8_INPUT_REG    (DCB32IN)
-	db		5ah, 44h		;TX8_OUTPUT_REG   (DCB32OU)
-;  Instance name Timer16_1, User Module Timer16
-;       Instance name Timer16_1, Block Name TIMER16_LSB(DBB30)
-	db		50h, 00h		;Timer16_1_FUNC_LSB_REG(DBB30FN)
-	db		51h, 17h		;Timer16_1_INPUT_LSB_REG(DBB30IN)
-	db		52h, 40h		;Timer16_1_OUTPUT_LSB_REG(DBB30OU)
-;       Instance name Timer16_1, Block Name TIMER16_MSB(DBB31)
-	db		54h, 20h		;Timer16_1_FUNC_MSB_REG(DBB31FN)
-	db		55h, 37h		;Timer16_1_INPUT_MSB_REG(DBB31IN)
-	db		56h, 40h		;Timer16_1_OUTPUT_MSB_REG(DBB31OU)
+;  Instance name Timer16, User Module Timer16
+;       Instance name Timer16, Block Name TIMER16_LSB(DBB30)
+	db		50h, 00h		;Timer16_FUNC_LSB_REG(DBB30FN)
+	db		51h, 17h		;Timer16_INPUT_LSB_REG(DBB30IN)
+	db		52h, 40h		;Timer16_OUTPUT_LSB_REG(DBB30OU)
+;       Instance name Timer16, Block Name TIMER16_MSB(DBB31)
+	db		54h, 20h		;Timer16_FUNC_MSB_REG(DBB31FN)
+	db		55h, 37h		;Timer16_INPUT_MSB_REG(DBB31IN)
+	db		56h, 40h		;Timer16_OUTPUT_MSB_REG(DBB31OU)
 ;  Global Register values Bank 1
 	db		61h, 00h		; AnalogClockSelect1 register (CLK_CR1)
 	db		69h, 00h		; AnalogClockSelect2 register (CLK_CR2)
@@ -128,11 +118,11 @@ LoadConfigTBL_box_slave_Bank1:
 LoadConfigTBL_box_slave_Ordered:
 ;  Ordered Global Register values
 	M8C_SetBank1
-	mov	reg[00h], 01h		; Port_0_DriveMode_0 register (PRT0DM0)
-	mov	reg[01h], feh		; Port_0_DriveMode_1 register (PRT0DM1)
+	mov	reg[00h], 00h		; Port_0_DriveMode_0 register (PRT0DM0)
+	mov	reg[01h], ffh		; Port_0_DriveMode_1 register (PRT0DM1)
 	M8C_SetBank0
-	mov	reg[03h], feh		; Port_0_DriveMode_2 register (PRT0DM2)
-	mov	reg[02h], 01h		; Port_0_GlobalSelect register (PRT0GS)
+	mov	reg[03h], ffh		; Port_0_DriveMode_2 register (PRT0DM2)
+	mov	reg[02h], 00h		; Port_0_GlobalSelect register (PRT0GS)
 	M8C_SetBank1
 	mov	reg[02h], 00h		; Port_0_IntCtrl_0 register (PRT0IC0)
 	mov	reg[03h], 00h		; Port_0_IntCtrl_1 register (PRT0IC1)

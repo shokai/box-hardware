@@ -198,7 +198,7 @@ ENDIF
     reti
 
     org   58h                      ;PSoC Block DCB32 Interrupt Vector
-    ljmp	_TX8_ISR
+    // call	void_handler
     reti
 
     org   5Ch                      ;PSoC Block DCB33 Interrupt Vector

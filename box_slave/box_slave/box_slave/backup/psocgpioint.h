@@ -32,24 +32,6 @@ BYTE			Button_IntCtrl_1_ADDR;
 #pragma	ioport	Button_IntEn_ADDR:	0x9
 BYTE			Button_IntEn_ADDR;
 #define Button_MASK 0x4
-// TX8 address and mask defines
-#pragma	ioport	TX8_Data_ADDR:	0x0
-BYTE			TX8_Data_ADDR;
-#pragma	ioport	TX8_DriveMode_0_ADDR:	0x100
-BYTE			TX8_DriveMode_0_ADDR;
-#pragma	ioport	TX8_DriveMode_1_ADDR:	0x101
-BYTE			TX8_DriveMode_1_ADDR;
-#pragma	ioport	TX8_DriveMode_2_ADDR:	0x3
-BYTE			TX8_DriveMode_2_ADDR;
-#pragma	ioport	TX8_GlobalSelect_ADDR:	0x2
-BYTE			TX8_GlobalSelect_ADDR;
-#pragma	ioport	TX8_IntCtrl_0_ADDR:	0x102
-BYTE			TX8_IntCtrl_0_ADDR;
-#pragma	ioport	TX8_IntCtrl_1_ADDR:	0x103
-BYTE			TX8_IntCtrl_1_ADDR;
-#pragma	ioport	TX8_IntEn_ADDR:	0x1
-BYTE			TX8_IntEn_ADDR;
-#define TX8_MASK 0x1
 // ADC0 address and mask defines
 #pragma	ioport	ADC0_Data_ADDR:	0x0
 BYTE			ADC0_Data_ADDR;
@@ -67,7 +49,7 @@ BYTE			ADC0_IntCtrl_0_ADDR;
 BYTE			ADC0_IntCtrl_1_ADDR;
 #pragma	ioport	ADC0_IntEn_ADDR:	0x1
 BYTE			ADC0_IntEn_ADDR;
-#define ADC0_MASK 0x2
+#define ADC0_MASK 0x1
 // ADC1 address and mask defines
 #pragma	ioport	ADC1_Data_ADDR:	0x0
 BYTE			ADC1_Data_ADDR;
@@ -103,7 +85,7 @@ BYTE			ADC2_IntCtrl_0_ADDR;
 BYTE			ADC2_IntCtrl_1_ADDR;
 #pragma	ioport	ADC2_IntEn_ADDR:	0x1
 BYTE			ADC2_IntEn_ADDR;
-#define ADC2_MASK 0x8
+#define ADC2_MASK 0x10
 // ADC3 address and mask defines
 #pragma	ioport	ADC3_Data_ADDR:	0x0
 BYTE			ADC3_Data_ADDR;
@@ -121,7 +103,7 @@ BYTE			ADC3_IntCtrl_0_ADDR;
 BYTE			ADC3_IntCtrl_1_ADDR;
 #pragma	ioport	ADC3_IntEn_ADDR:	0x1
 BYTE			ADC3_IntEn_ADDR;
-#define ADC3_MASK 0x10
+#define ADC3_MASK 0x40
 // I2CHWSDA address and mask defines
 #pragma	ioport	I2CHWSDA_Data_ADDR:	0x4
 BYTE			I2CHWSDA_Data_ADDR;

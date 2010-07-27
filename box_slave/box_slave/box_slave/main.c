@@ -13,18 +13,27 @@
 #define BTN_PORT PRT2DR // push button
 #define BTN_BIT _BV(2)
 
+int ad;
+
+// AMUX4_PORT0_0 => 0x00
+// AMUX4_PORT0_2 => 0x01
+// AMUX4_PORT0_4 => 0x02
+// AMUX4_PORT0_6 => 0x03
+int get_adc(BYTE amux_pin){
+    AMUX4_InputSelect(amux_pin);
+    ADCINC_GetSamples(0);
+    while(!ADCINC_fIsDataAvailable());
+    return ADCINC_iClearFlagGetData();
+}
 
 void main(void)
 {
-    int ad;
     M8C_EnableGInt;
-    PGA_1_Start(3);
-    ADCINC_Start(ADCINCVR_1_HIGHPOWER);
+    AMUX4_Start();
+    PGA_1_Start(PGA_1_HIGHPOWER);
+    ADCINC_Start(ADCINC_HIGHPOWER);
     LED_ON();
-
     for(;;){
-        while(!ADCINCVR_1_fIsDataAvailable());
-        ad = ADCINCVR_1_iGetData();
-        ADCINCVR_1_ClearFlag();
+        ad = get_adc(0);
     }
 }
