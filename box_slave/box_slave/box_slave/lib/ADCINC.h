@@ -77,13 +77,13 @@ BYTE            ADCINC_PWMfn;
 BYTE            ADCINC_PWMsl;
 #pragma ioport  ADCINC_PWMos:   0x122                  //Output select reg
 BYTE            ADCINC_PWMos;
-#pragma ioport  ADCINC_AtoDcr0: 0x080                //SC Block Control Reg 0
+#pragma ioport  ADCINC_AtoDcr0: 0x084                //SC Block Control Reg 0
 BYTE            ADCINC_AtoDcr0;
-#pragma ioport  ADCINC_AtoDcr1: 0x081                //SC Block Control Reg 1
+#pragma ioport  ADCINC_AtoDcr1: 0x085                //SC Block Control Reg 1
 BYTE            ADCINC_AtoDcr1;
-#pragma ioport  ADCINC_AtoDcr2: 0x082                //SC Block Control Reg 2
+#pragma ioport  ADCINC_AtoDcr2: 0x086                //SC Block Control Reg 2
 BYTE            ADCINC_AtoDcr2;
-#pragma ioport  ADCINC_AtoDcr3: 0x083                //SC Block Control Reg 3
+#pragma ioport  ADCINC_AtoDcr3: 0x087                //SC Block Control Reg 3
 BYTE            ADCINC_AtoDcr3;
 
 // end of file ADCINC.h

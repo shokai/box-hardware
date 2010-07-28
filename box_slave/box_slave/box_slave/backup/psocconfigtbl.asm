@@ -8,11 +8,11 @@ export LoadConfigTBL_box_slave_Ordered
 AREA lit(rom, rel)
 LoadConfigTBL_box_slave_Bank0:
 ;  Instance name ADCINC, User Module ADCINC
-;       Instance name ADCINC, Block Name ADC(ASC10)
-	db		80h, 90h		;ADCINC_AtoDcr0(ASC10CR0)
-	db		81h, 00h		;ADCINC_AtoDcr1(ASC10CR1)
-	db		82h, 60h		;ADCINC_AtoDcr2(ASC10CR2)
-	db		83h, f0h		;ADCINC_AtoDcr3(ASC10CR3)
+;       Instance name ADCINC, Block Name ADC(ASD11)
+	db		84h, 90h		;ADCINC_AtoDcr0(ASD11CR0)
+	db		85h, 00h		;ADCINC_AtoDcr1(ASD11CR1)
+	db		86h, 60h		;ADCINC_AtoDcr2(ASD11CR2)
+	db		87h, fch		;ADCINC_AtoDcr3(ASD11CR3)
 ;       Instance name ADCINC, Block Name PWM(DBB00)
 	db		23h, 00h		;ADCINC_PWMcr0(DBB00CR0)
 	db		21h, 00h		;ADCINC_PWMdr1(DBB00DR1)
@@ -20,11 +20,11 @@ LoadConfigTBL_box_slave_Bank0:
 ;  Instance name AMUX4, User Module AMUX4
 ;  Instance name I2CHW, User Module I2CHW
 ;  Instance name PGA_1, User Module PGA
-;       Instance name PGA_1, Block Name GAIN(ACB00)
-	db		71h, feh		;PGA_1_GAIN_CR0(ACB00CR0)
-	db		72h, 21h		;PGA_1_GAIN_CR1(ACB00CR1)
-	db		73h, 20h		;PGA_1_GAIN_CR2(ACB00CR2)
-	db		70h, 00h		;PGA_1_GAIN_CR3(ACB00CR3)
+;       Instance name PGA_1, Block Name GAIN(ACB01)
+	db		75h, feh		;PGA_1_GAIN_CR0(ACB01CR0)
+	db		76h, 21h		;PGA_1_GAIN_CR1(ACB01CR1)
+	db		77h, 20h		;PGA_1_GAIN_CR2(ACB01CR2)
+	db		74h, 00h		;PGA_1_GAIN_CR3(ACB01CR3)
 ;  Instance name TX8, User Module TX8
 ;       Instance name TX8, Block Name TX8(DCB02)
 	db		2bh, 00h		;TX8_CONTROL_REG  (DCB02CR0)
@@ -40,11 +40,11 @@ LoadConfigTBL_box_slave_Bank0:
 	db		55h, 00h		;Timer16_PERIOD_MSB_REG(DBB31DR1)
 	db		56h, 00h		;Timer16_COMPARE_MSB_REG(DBB31DR2)
 ;  Global Register values Bank 0
-	db		60h, 94h		; AnalogColumnInputSelect register (AMX_IN)
+	db		60h, b0h		; AnalogColumnInputSelect register (AMX_IN)
 	db		66h, 00h		; AnalogComparatorControl1 register (CMP_CR1)
 	db		63h, 05h		; AnalogReferenceControl register (ARF_CR)
 	db		65h, 00h		; AnalogSyncControl register (ASY_CR)
-	db		e6h, 00h		; DecimatorControl_0 register (DEC_CR0)
+	db		e6h, 02h		; DecimatorControl_0 register (DEC_CR0)
 	db		e7h, 42h		; DecimatorControl_1 register (DEC_CR1)
 	db		d6h, 00h		; I2CConfig register (I2C_CFG)
 	db		b0h, 00h		; Row_0_InputMux register (RDI0RI)
@@ -82,7 +82,7 @@ LoadConfigTBL_box_slave_Bank0:
 	db		ffh
 LoadConfigTBL_box_slave_Bank1:
 ;  Instance name ADCINC, User Module ADCINC
-;       Instance name ADCINC, Block Name ADC(ASC10)
+;       Instance name ADCINC, Block Name ADC(ASD11)
 ;       Instance name ADCINC, Block Name PWM(DBB00)
 	db		20h, 31h		;ADCINC_PWMfn(DBB00FN)
 	db		21h, 15h		;ADCINC_PWMsl(DBB00IN)
@@ -90,7 +90,7 @@ LoadConfigTBL_box_slave_Bank1:
 ;  Instance name AMUX4, User Module AMUX4
 ;  Instance name I2CHW, User Module I2CHW
 ;  Instance name PGA_1, User Module PGA
-;       Instance name PGA_1, Block Name GAIN(ACB00)
+;       Instance name PGA_1, Block Name GAIN(ACB01)
 ;  Instance name TX8, User Module TX8
 ;       Instance name TX8, Block Name TX8(DCB02)
 	db		28h, 1dh		;TX8_FUNC_REG     (DCB02FN)

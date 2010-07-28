@@ -73,13 +73,13 @@ extern void PGA_1_Stop(void);                    // Proxy class 1
 // Register Addresses for PGA_1
 //-------------------------------------------------
 
-#pragma ioport  PGA_1_GAIN_CR0: 0x071
+#pragma ioport  PGA_1_GAIN_CR0: 0x075
 BYTE            PGA_1_GAIN_CR0;
-#pragma ioport  PGA_1_GAIN_CR1: 0x072
+#pragma ioport  PGA_1_GAIN_CR1: 0x076
 BYTE            PGA_1_GAIN_CR1;
-#pragma ioport  PGA_1_GAIN_CR2: 0x073
+#pragma ioport  PGA_1_GAIN_CR2: 0x077
 BYTE            PGA_1_GAIN_CR2;
-#pragma ioport  PGA_1_GAIN_CR3: 0x070
+#pragma ioport  PGA_1_GAIN_CR3: 0x074
 BYTE            PGA_1_GAIN_CR3;
 
 

@@ -57,8 +57,8 @@ PGA_1_G0_06:       equ 00h
 ;--------------------------------------------------
 ; Register Address Constants used by PGA_1
 ;--------------------------------------------------
-PGA_1_GAIN_CR0: equ 71h
-PGA_1_GAIN_CR1: equ 72h
-PGA_1_GAIN_CR2: equ 73h
-PGA_1_GAIN_CR3: equ 70h
+PGA_1_GAIN_CR0: equ 75h
+PGA_1_GAIN_CR1: equ 76h
+PGA_1_GAIN_CR2: equ 77h
+PGA_1_GAIN_CR3: equ 74h
 

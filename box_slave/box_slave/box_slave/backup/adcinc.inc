@@ -24,7 +24,7 @@ ADCINC_HIGHPOWER:               equ 03h
 
 ADCINC_bNUMBITS:                equ 0eh
 ADCINC_NoAZ:                    equ 1
-ADCINC_SIGNED_DATA:             equ 1
+ADCINC_SIGNED_DATA:             equ 0
 ADCINC_9_OR_MORE_BITS:          equ ((0eh - 1)& 08h)
 ADCINC_8_OR_MORE_BITS:          equ ((0eh )& 08h)
 ;--------------------------------------------------
@@ -42,10 +42,10 @@ ADCINC_PWMfn:                  equ 20h     ; Function reg
 ADCINC_PWMsl:                  equ 21h     ; Input  select reg
 ADCINC_PWMos:                  equ 22h     ; Output select reg
 
-ADCINC_AtoDcr0:                equ 80h     ; SC Block Control Reg 0
-ADCINC_AtoDcr1:                equ 81h     ; SC Block Control Reg 1
-ADCINC_AtoDcr2:                equ 82h     ; SC Block Control Reg 2
-ADCINC_AtoDcr3:                equ 83h     ; SC Block Control Reg 3
+ADCINC_AtoDcr0:                equ 84h     ; SC Block Control Reg 0
+ADCINC_AtoDcr1:                equ 85h     ; SC Block Control Reg 1
+ADCINC_AtoDcr2:                equ 86h     ; SC Block Control Reg 2
+ADCINC_AtoDcr3:                equ 87h     ; SC Block Control Reg 3
 
 HighByte: equ 0
 LowByte:  equ 1

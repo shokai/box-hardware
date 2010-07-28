@@ -30,7 +30,6 @@ BYTE ad_pin;
 int weights[4];
 char buf[6];
 
-
 // int‚ÌŒ…”‚ğ•Ô‚·
 char getDigit(int n){
     char i;
@@ -55,6 +54,10 @@ char *intToStr(int n, char *buf){ // •ÏŠ·‚·‚é”Aì‹Æ—Ìˆæ
     return buf;
 }
 
+void wait(int n){
+    while(n--);
+}
+
 void main(void)
 {
     M8C_EnableGInt;
@@ -74,13 +77,6 @@ void main(void)
     TX8_PutSHexByte(I2CHW_SLAVE_ADDR);
     TX8_PutCRLF();
     LED_DBG_OFF();
-    for(;;){
-        int i;
-        for(i = 0; i < 8000; i++){
-            TX8_PutString(intToStr(i,buf));
-            TX8_PutCRLF();
-        }
-    }
 
     for(;;){
         // I2C
@@ -113,6 +109,7 @@ void main(void)
 // AMUX4_PORT0_6 => 0x03
 int get_adc(BYTE amux_channel){
     AMUX4_InputSelect(amux_channel);
+    wait(10);
     ADCINC_GetSamples(0);
     while(!ADCINC_fIsDataAvailable());
     return ADCINC_iClearFlagGetData();
