@@ -3,5 +3,5 @@
 *.xml binary
 *.inc binary
 *.soc binary
-
+*.pep binary
 
