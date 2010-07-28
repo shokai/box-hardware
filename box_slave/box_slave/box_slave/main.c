@@ -30,6 +30,31 @@ BYTE ad_pin;
 int weights[4];
 char buf[6];
 
+
+// intÇÃåÖêîÇï‘Ç∑
+char getDigit(int n){
+    char i;
+    i = 0;
+    while(n>0){
+        n /= 10;
+        i++;
+    }
+    return i;
+}
+
+// int->Stringïœä∑
+// char buf[6]
+char *intToStr(int n, char *buf){ // ïœä∑Ç∑ÇÈêîÅAçÏã∆óÃàÊ
+    int i, digit;
+    digit = getDigit(n); // åÖêî
+    for(i = digit-1; i >= 0; i--){ // intÇÕç≈ëÂ5åÖ
+        buf[i] = n%10+'0';
+        n /= 10;
+    }
+    buf[digit] = '\0'; // çsññ
+    return buf;
+}
+
 void main(void)
 {
     M8C_EnableGInt;
@@ -50,6 +75,14 @@ void main(void)
     TX8_PutCRLF();
     LED_DBG_OFF();
     for(;;){
+        int i;
+        for(i = 0; i < 8000; i++){
+            TX8_PutString(intToStr(i,buf));
+            TX8_PutCRLF();
+        }
+    }
+
+    for(;;){
         // I2C
         i2c_status = I2CHW_bReadI2CStatus();
         if(i2c_status & I2CHW_WR_COMPLETE){ // master->slave
@@ -65,9 +98,9 @@ void main(void)
         for(ad_pin = 0; ad_pin < 4; ad_pin++){
             ad = get_adc(ad_pin);
             weights[ad_pin] = ad;
-            TX8_PutChar(ad_pin);
+            TX8_PutChar(ad_pin+'0');
             TX8_CPutString(":");
-            TX8_PutString(itoa(buf, ad, 6));
+            TX8_PutString(intToStr(ad,buf));
             TX8_PutCRLF();
         }
     }
