@@ -104,24 +104,6 @@ BYTE			ADC3_IntCtrl_1_ADDR;
 #pragma	ioport	ADC3_IntEn_ADDR:	0x1
 BYTE			ADC3_IntEn_ADDR;
 #define ADC3_MASK 0x40
-// AnalogColumn_InputMUX_2 address and mask defines
-#pragma	ioport	AnalogColumn_InputMUX_2_Data_ADDR:	0x0
-BYTE			AnalogColumn_InputMUX_2_Data_ADDR;
-#pragma	ioport	AnalogColumn_InputMUX_2_DriveMode_0_ADDR:	0x100
-BYTE			AnalogColumn_InputMUX_2_DriveMode_0_ADDR;
-#pragma	ioport	AnalogColumn_InputMUX_2_DriveMode_1_ADDR:	0x101
-BYTE			AnalogColumn_InputMUX_2_DriveMode_1_ADDR;
-#pragma	ioport	AnalogColumn_InputMUX_2_DriveMode_2_ADDR:	0x3
-BYTE			AnalogColumn_InputMUX_2_DriveMode_2_ADDR;
-#pragma	ioport	AnalogColumn_InputMUX_2_GlobalSelect_ADDR:	0x2
-BYTE			AnalogColumn_InputMUX_2_GlobalSelect_ADDR;
-#pragma	ioport	AnalogColumn_InputMUX_2_IntCtrl_0_ADDR:	0x102
-BYTE			AnalogColumn_InputMUX_2_IntCtrl_0_ADDR;
-#pragma	ioport	AnalogColumn_InputMUX_2_IntCtrl_1_ADDR:	0x103
-BYTE			AnalogColumn_InputMUX_2_IntCtrl_1_ADDR;
-#pragma	ioport	AnalogColumn_InputMUX_2_IntEn_ADDR:	0x1
-BYTE			AnalogColumn_InputMUX_2_IntEn_ADDR;
-#define AnalogColumn_InputMUX_2_MASK 0x80
 // SDATA address and mask defines
 #pragma	ioport	SDATA_Data_ADDR:	0x4
 BYTE			SDATA_Data_ADDR;
