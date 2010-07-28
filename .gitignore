@@ -9,3 +9,4 @@ BuildMsg.txt
 *.pdb
 Thumbs.db
 *.a
+*#*
