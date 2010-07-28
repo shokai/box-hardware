@@ -81,7 +81,7 @@ void main(void){
     PGA_1_Start(PGA_1_HIGHPOWER);
     ADCINC_Start(ADCINC_HIGHPOWER);
     TX8_Start(TX8_PARITY_NONE);
-
+    
     LED_DBG_ON();
     TX8_CPutString("I2C slave addr:0x");
     TX8_PutSHexByte(I2CHW_SLAVE_ADDR);
