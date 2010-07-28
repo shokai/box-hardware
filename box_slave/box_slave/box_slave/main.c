@@ -24,7 +24,6 @@ BYTE buf_rx[BUF_SIZE]; // I2C buffer
 BYTE buf_tx[BUF_SIZE] = {'x'};
 BYTE i2c_status; // I2C status
 
-int get_adc(BYTE amux_channel);
 int ad;
 BYTE ad_pin;
 int weights[4];
@@ -58,8 +57,19 @@ void wait(int n){
     while(n--);
 }
 
-void main(void)
-{
+// AMUX4_PORT0_0 => 0x00
+// AMUX4_PORT0_2 => 0x01
+// AMUX4_PORT0_4 => 0x02
+// AMUX4_PORT0_6 => 0x03
+int get_adc(BYTE amux_channel){
+    AMUX4_InputSelect(amux_channel);
+    wait(10);
+    ADCINC_GetSamples(0);
+    while(!ADCINC_fIsDataAvailable());
+    return ADCINC_iClearFlagGetData();
+}
+
+void main(void){
     M8C_EnableGInt;
     M8C_EnableIntMask(INT_MSK0, INT_MSK0_GPIO);
 
@@ -99,20 +109,11 @@ void main(void)
             TX8_PutString(intToStr(ad,buf));
             TX8_PutCRLF();
         }
+        buf_tx[0] = 'a';
+        buf_tx[1] = 'b';
+        buf_tx[2] = 'c';
+        buf_tx[3] = 'd';
     }
-}
-
-
-// AMUX4_PORT0_0 => 0x00
-// AMUX4_PORT0_2 => 0x01
-// AMUX4_PORT0_4 => 0x02
-// AMUX4_PORT0_6 => 0x03
-int get_adc(BYTE amux_channel){
-    AMUX4_InputSelect(amux_channel);
-    wait(10);
-    ADCINC_GetSamples(0);
-    while(!ADCINC_fIsDataAvailable());
-    return ADCINC_iClearFlagGetData();
 }
 
 

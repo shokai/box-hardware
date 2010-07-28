@@ -140,24 +140,6 @@ BYTE			SCLK_IntCtrl_1_ADDR;
 #pragma	ioport	SCLK_IntEn_ADDR:	0x5
 BYTE			SCLK_IntEn_ADDR;
 #define SCLK_MASK 0x2
-// TXi8 address and mask defines
-#pragma	ioport	TXi8_Data_ADDR:	0x4
-BYTE			TXi8_Data_ADDR;
-#pragma	ioport	TXi8_DriveMode_0_ADDR:	0x104
-BYTE			TXi8_DriveMode_0_ADDR;
-#pragma	ioport	TXi8_DriveMode_1_ADDR:	0x105
-BYTE			TXi8_DriveMode_1_ADDR;
-#pragma	ioport	TXi8_DriveMode_2_ADDR:	0x7
-BYTE			TXi8_DriveMode_2_ADDR;
-#pragma	ioport	TXi8_GlobalSelect_ADDR:	0x6
-BYTE			TXi8_GlobalSelect_ADDR;
-#pragma	ioport	TXi8_IntCtrl_0_ADDR:	0x106
-BYTE			TXi8_IntCtrl_0_ADDR;
-#pragma	ioport	TXi8_IntCtrl_1_ADDR:	0x107
-BYTE			TXi8_IntCtrl_1_ADDR;
-#pragma	ioport	TXi8_IntEn_ADDR:	0x5
-BYTE			TXi8_IntEn_ADDR;
-#define TXi8_MASK 0x4
 // I2CHWSDA address and mask defines
 #pragma	ioport	I2CHWSDA_Data_ADDR:	0x4
 BYTE			I2CHWSDA_Data_ADDR;
@@ -230,3 +212,21 @@ BYTE			LED_IntCtrl_1_ADDR;
 #pragma	ioport	LED_IntEn_ADDR:	0x9
 BYTE			LED_IntEn_ADDR;
 #define LED_MASK 0x2
+// TX8 address and mask defines
+#pragma	ioport	TX8_Data_ADDR:	0x8
+BYTE			TX8_Data_ADDR;
+#pragma	ioport	TX8_DriveMode_0_ADDR:	0x108
+BYTE			TX8_DriveMode_0_ADDR;
+#pragma	ioport	TX8_DriveMode_1_ADDR:	0x109
+BYTE			TX8_DriveMode_1_ADDR;
+#pragma	ioport	TX8_DriveMode_2_ADDR:	0xb
+BYTE			TX8_DriveMode_2_ADDR;
+#pragma	ioport	TX8_GlobalSelect_ADDR:	0xa
+BYTE			TX8_GlobalSelect_ADDR;
+#pragma	ioport	TX8_IntCtrl_0_ADDR:	0x10a
+BYTE			TX8_IntCtrl_0_ADDR;
+#pragma	ioport	TX8_IntCtrl_1_ADDR:	0x10b
+BYTE			TX8_IntCtrl_1_ADDR;
+#pragma	ioport	TX8_IntEn_ADDR:	0x9
+BYTE			TX8_IntEn_ADDR;
+#define TX8_MASK 0x8

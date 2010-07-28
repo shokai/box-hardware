@@ -13,9 +13,9 @@
 ;--------------------------------------------------
 ; Constants for AMUX4 API's.
 ;--------------------------------------------------
-AMUX4_MUX_COL:               equ 0h
-AMUX4_COL_COUNT:             equ (0h & 80h)
-AMUX4_MUX_MASK:              equ (03 << (0h<<1))
+AMUX4_MUX_COL:               equ 1h
+AMUX4_COL_COUNT:             equ (1h & 80h)
+AMUX4_MUX_MASK:              equ (03 << (1h<<1))
 
 AMUX4_PORT0_0:                    equ 0h
 AMUX4_PORT0_2:                    equ 1h
