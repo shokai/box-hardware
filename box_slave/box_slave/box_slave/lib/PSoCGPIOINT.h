@@ -32,24 +32,6 @@ BYTE			Button_IntCtrl_1_ADDR;
 #pragma	ioport	Button_IntEn_ADDR:	0x9
 BYTE			Button_IntEn_ADDR;
 #define Button_MASK 0x4
-// TX8 address and mask defines
-#pragma	ioport	TX8_Data_ADDR:	0x0
-BYTE			TX8_Data_ADDR;
-#pragma	ioport	TX8_DriveMode_0_ADDR:	0x100
-BYTE			TX8_DriveMode_0_ADDR;
-#pragma	ioport	TX8_DriveMode_1_ADDR:	0x101
-BYTE			TX8_DriveMode_1_ADDR;
-#pragma	ioport	TX8_DriveMode_2_ADDR:	0x3
-BYTE			TX8_DriveMode_2_ADDR;
-#pragma	ioport	TX8_GlobalSelect_ADDR:	0x2
-BYTE			TX8_GlobalSelect_ADDR;
-#pragma	ioport	TX8_IntCtrl_0_ADDR:	0x102
-BYTE			TX8_IntCtrl_0_ADDR;
-#pragma	ioport	TX8_IntCtrl_1_ADDR:	0x103
-BYTE			TX8_IntCtrl_1_ADDR;
-#pragma	ioport	TX8_IntEn_ADDR:	0x1
-BYTE			TX8_IntEn_ADDR;
-#define TX8_MASK 0x1
 // ADC0 address and mask defines
 #pragma	ioport	ADC0_Data_ADDR:	0x0
 BYTE			ADC0_Data_ADDR;
@@ -67,7 +49,7 @@ BYTE			ADC0_IntCtrl_0_ADDR;
 BYTE			ADC0_IntCtrl_1_ADDR;
 #pragma	ioport	ADC0_IntEn_ADDR:	0x1
 BYTE			ADC0_IntEn_ADDR;
-#define ADC0_MASK 0x2
+#define ADC0_MASK 0x1
 // ADC1 address and mask defines
 #pragma	ioport	ADC1_Data_ADDR:	0x0
 BYTE			ADC1_Data_ADDR;
@@ -103,7 +85,7 @@ BYTE			ADC2_IntCtrl_0_ADDR;
 BYTE			ADC2_IntCtrl_1_ADDR;
 #pragma	ioport	ADC2_IntEn_ADDR:	0x1
 BYTE			ADC2_IntEn_ADDR;
-#define ADC2_MASK 0x8
+#define ADC2_MASK 0x10
 // ADC3 address and mask defines
 #pragma	ioport	ADC3_Data_ADDR:	0x0
 BYTE			ADC3_Data_ADDR;
@@ -121,7 +103,61 @@ BYTE			ADC3_IntCtrl_0_ADDR;
 BYTE			ADC3_IntCtrl_1_ADDR;
 #pragma	ioport	ADC3_IntEn_ADDR:	0x1
 BYTE			ADC3_IntEn_ADDR;
-#define ADC3_MASK 0x10
+#define ADC3_MASK 0x40
+// SDATA address and mask defines
+#pragma	ioport	SDATA_Data_ADDR:	0x4
+BYTE			SDATA_Data_ADDR;
+#pragma	ioport	SDATA_DriveMode_0_ADDR:	0x104
+BYTE			SDATA_DriveMode_0_ADDR;
+#pragma	ioport	SDATA_DriveMode_1_ADDR:	0x105
+BYTE			SDATA_DriveMode_1_ADDR;
+#pragma	ioport	SDATA_DriveMode_2_ADDR:	0x7
+BYTE			SDATA_DriveMode_2_ADDR;
+#pragma	ioport	SDATA_GlobalSelect_ADDR:	0x6
+BYTE			SDATA_GlobalSelect_ADDR;
+#pragma	ioport	SDATA_IntCtrl_0_ADDR:	0x106
+BYTE			SDATA_IntCtrl_0_ADDR;
+#pragma	ioport	SDATA_IntCtrl_1_ADDR:	0x107
+BYTE			SDATA_IntCtrl_1_ADDR;
+#pragma	ioport	SDATA_IntEn_ADDR:	0x5
+BYTE			SDATA_IntEn_ADDR;
+#define SDATA_MASK 0x1
+// SCLK address and mask defines
+#pragma	ioport	SCLK_Data_ADDR:	0x4
+BYTE			SCLK_Data_ADDR;
+#pragma	ioport	SCLK_DriveMode_0_ADDR:	0x104
+BYTE			SCLK_DriveMode_0_ADDR;
+#pragma	ioport	SCLK_DriveMode_1_ADDR:	0x105
+BYTE			SCLK_DriveMode_1_ADDR;
+#pragma	ioport	SCLK_DriveMode_2_ADDR:	0x7
+BYTE			SCLK_DriveMode_2_ADDR;
+#pragma	ioport	SCLK_GlobalSelect_ADDR:	0x6
+BYTE			SCLK_GlobalSelect_ADDR;
+#pragma	ioport	SCLK_IntCtrl_0_ADDR:	0x106
+BYTE			SCLK_IntCtrl_0_ADDR;
+#pragma	ioport	SCLK_IntCtrl_1_ADDR:	0x107
+BYTE			SCLK_IntCtrl_1_ADDR;
+#pragma	ioport	SCLK_IntEn_ADDR:	0x5
+BYTE			SCLK_IntEn_ADDR;
+#define SCLK_MASK 0x2
+// TXi8 address and mask defines
+#pragma	ioport	TXi8_Data_ADDR:	0x4
+BYTE			TXi8_Data_ADDR;
+#pragma	ioport	TXi8_DriveMode_0_ADDR:	0x104
+BYTE			TXi8_DriveMode_0_ADDR;
+#pragma	ioport	TXi8_DriveMode_1_ADDR:	0x105
+BYTE			TXi8_DriveMode_1_ADDR;
+#pragma	ioport	TXi8_DriveMode_2_ADDR:	0x7
+BYTE			TXi8_DriveMode_2_ADDR;
+#pragma	ioport	TXi8_GlobalSelect_ADDR:	0x6
+BYTE			TXi8_GlobalSelect_ADDR;
+#pragma	ioport	TXi8_IntCtrl_0_ADDR:	0x106
+BYTE			TXi8_IntCtrl_0_ADDR;
+#pragma	ioport	TXi8_IntCtrl_1_ADDR:	0x107
+BYTE			TXi8_IntCtrl_1_ADDR;
+#pragma	ioport	TXi8_IntEn_ADDR:	0x5
+BYTE			TXi8_IntEn_ADDR;
+#define TXi8_MASK 0x4
 // I2CHWSDA address and mask defines
 #pragma	ioport	I2CHWSDA_Data_ADDR:	0x4
 BYTE			I2CHWSDA_Data_ADDR;
@@ -158,6 +194,24 @@ BYTE			I2CHWSCL_IntCtrl_1_ADDR;
 #pragma	ioport	I2CHWSCL_IntEn_ADDR:	0x5
 BYTE			I2CHWSCL_IntEn_ADDR;
 #define I2CHWSCL_MASK 0x80
+// LED_DBG address and mask defines
+#pragma	ioport	LED_DBG_Data_ADDR:	0x8
+BYTE			LED_DBG_Data_ADDR;
+#pragma	ioport	LED_DBG_DriveMode_0_ADDR:	0x108
+BYTE			LED_DBG_DriveMode_0_ADDR;
+#pragma	ioport	LED_DBG_DriveMode_1_ADDR:	0x109
+BYTE			LED_DBG_DriveMode_1_ADDR;
+#pragma	ioport	LED_DBG_DriveMode_2_ADDR:	0xb
+BYTE			LED_DBG_DriveMode_2_ADDR;
+#pragma	ioport	LED_DBG_GlobalSelect_ADDR:	0xa
+BYTE			LED_DBG_GlobalSelect_ADDR;
+#pragma	ioport	LED_DBG_IntCtrl_0_ADDR:	0x10a
+BYTE			LED_DBG_IntCtrl_0_ADDR;
+#pragma	ioport	LED_DBG_IntCtrl_1_ADDR:	0x10b
+BYTE			LED_DBG_IntCtrl_1_ADDR;
+#pragma	ioport	LED_DBG_IntEn_ADDR:	0x9
+BYTE			LED_DBG_IntEn_ADDR;
+#define LED_DBG_MASK 0x1
 // LED address and mask defines
 #pragma	ioport	LED_Data_ADDR:	0x8
 BYTE			LED_Data_ADDR;
@@ -175,4 +229,4 @@ BYTE			LED_IntCtrl_0_ADDR;
 BYTE			LED_IntCtrl_1_ADDR;
 #pragma	ioport	LED_IntEn_ADDR:	0x9
 BYTE			LED_IntEn_ADDR;
-#define LED_MASK 0x1
+#define LED_MASK 0x2

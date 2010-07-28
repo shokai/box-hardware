@@ -4,35 +4,22 @@
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8ssc.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\lib\GLOBAL~1.INC\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./obj/main.o :  ./lib/ADCINC~1.H ./lib/ADCINC~2.H ./lib/ADCINC~3.H\
-   ./lib/ADCINC~4.H ./lib/I2CHWC~1.H ./lib/I2CHWS~1.H ./lib/PGA_1.h\
-   ./lib/PGA_2.h ./lib/PGA_3.h ./lib/PGA_4.h ./lib/PSoCAPI.h\
-   ./lib/TX8.h ./lib/TIMER1~1.H\
+./obj/main.o :  ./lib/ADCINC.h ./lib/AMUX4.h ./lib/I2CHWC~1.H\
+   ./lib/I2CHWS~1.H ./lib/PGA_1.h ./lib/PSoCAPI.h ./lib/TX8.h\
+   ./lib/Timer16.h\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/M8C.h\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8C.h\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.h
-./lib/obj/adcincvr_1.o :  ./lib/ADCINC~1.INC\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/_const.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/limits.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/stdlib.h\
+   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/string.h
+./lib/obj/adcinc.o :  ./lib/ADCINC.inc\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/adcincvr_1int.o :  ./lib/ADCINC~1.INC\
+./lib/obj/adcincint.o :  ./lib/ADCINC.inc\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/adcincvr_2.o :  ./lib/ADCINC~2.INC\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/adcincvr_2int.o :  ./lib/ADCINC~2.INC\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/adcincvr_3.o :  ./lib/ADCINC~3.INC\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/adcincvr_3int.o :  ./lib/ADCINC~3.INC\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/adcincvr_4.o :  ./lib/ADCINC~4.INC\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/adcincvr_4int.o :  ./lib/ADCINC~4.INC\
+./lib/obj/amux4.o :  ./lib/AMUX4.inc\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
 ./lib/obj/i2chwcommon.o :  ./lib/I2CHWC~1.INC\
@@ -47,15 +34,6 @@
 ./lib/obj/pga_1.o :  ./lib/PGA_1.inc\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/pga_2.o :  ./lib/PGA_2.inc\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/pga_3.o :  ./lib/PGA_3.inc\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/pga_4.o :  ./lib/PGA_4.inc\
-   C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
-   C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
 ./lib/obj/psocconfig.o :  ./lib/GLOBAL~1.INC\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
@@ -63,10 +41,10 @@
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc
 ./lib/obj/psocgpioint.o :  ./lib/PSOCGP~1.INC\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc
-./lib/obj/timer16_1.o :  ./lib/TIMER1~1.INC\
+./lib/obj/timer16.o :  ./lib/Timer16.inc\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
-./lib/obj/timer16_1int.o :  ./lib/TIMER1~1.INC\
+./lib/obj/timer16int.o :  ./lib/Timer16.inc\
    C:/PROGRA~1/Cypress/Common/CYPRES~3/tools/include/CY8C29~1/m8c.inc\
    C:\projects\box\BOX_SL~1\BOX_SL~1\BOX_SL~1\memory.inc
 ./lib/obj/tx8.o :  ./lib/TX8.inc\

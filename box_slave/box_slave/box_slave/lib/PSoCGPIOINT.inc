@@ -23,16 +23,6 @@ Button_IntCtrl_0_ADDR:	equ	10ah
 Button_IntCtrl_1_ADDR:	equ	10bh
 Button_IntEn_ADDR:	equ	9h
 Button_MASK:	equ	4h
-; TX8 address and mask equates
-TX8_Data_ADDR:	equ	0h
-TX8_DriveMode_0_ADDR:	equ	100h
-TX8_DriveMode_1_ADDR:	equ	101h
-TX8_DriveMode_2_ADDR:	equ	3h
-TX8_GlobalSelect_ADDR:	equ	2h
-TX8_IntCtrl_0_ADDR:	equ	102h
-TX8_IntCtrl_1_ADDR:	equ	103h
-TX8_IntEn_ADDR:	equ	1h
-TX8_MASK:	equ	1h
 ; ADC0 address and mask equates
 ADC0_Data_ADDR:	equ	0h
 ADC0_DriveMode_0_ADDR:	equ	100h
@@ -42,7 +32,7 @@ ADC0_GlobalSelect_ADDR:	equ	2h
 ADC0_IntCtrl_0_ADDR:	equ	102h
 ADC0_IntCtrl_1_ADDR:	equ	103h
 ADC0_IntEn_ADDR:	equ	1h
-ADC0_MASK:	equ	2h
+ADC0_MASK:	equ	1h
 ; ADC1 address and mask equates
 ADC1_Data_ADDR:	equ	0h
 ADC1_DriveMode_0_ADDR:	equ	100h
@@ -62,7 +52,7 @@ ADC2_GlobalSelect_ADDR:	equ	2h
 ADC2_IntCtrl_0_ADDR:	equ	102h
 ADC2_IntCtrl_1_ADDR:	equ	103h
 ADC2_IntEn_ADDR:	equ	1h
-ADC2_MASK:	equ	8h
+ADC2_MASK:	equ	10h
 ; ADC3 address and mask equates
 ADC3_Data_ADDR:	equ	0h
 ADC3_DriveMode_0_ADDR:	equ	100h
@@ -72,7 +62,37 @@ ADC3_GlobalSelect_ADDR:	equ	2h
 ADC3_IntCtrl_0_ADDR:	equ	102h
 ADC3_IntCtrl_1_ADDR:	equ	103h
 ADC3_IntEn_ADDR:	equ	1h
-ADC3_MASK:	equ	10h
+ADC3_MASK:	equ	40h
+; SDATA address and mask equates
+SDATA_Data_ADDR:	equ	4h
+SDATA_DriveMode_0_ADDR:	equ	104h
+SDATA_DriveMode_1_ADDR:	equ	105h
+SDATA_DriveMode_2_ADDR:	equ	7h
+SDATA_GlobalSelect_ADDR:	equ	6h
+SDATA_IntCtrl_0_ADDR:	equ	106h
+SDATA_IntCtrl_1_ADDR:	equ	107h
+SDATA_IntEn_ADDR:	equ	5h
+SDATA_MASK:	equ	1h
+; SCLK address and mask equates
+SCLK_Data_ADDR:	equ	4h
+SCLK_DriveMode_0_ADDR:	equ	104h
+SCLK_DriveMode_1_ADDR:	equ	105h
+SCLK_DriveMode_2_ADDR:	equ	7h
+SCLK_GlobalSelect_ADDR:	equ	6h
+SCLK_IntCtrl_0_ADDR:	equ	106h
+SCLK_IntCtrl_1_ADDR:	equ	107h
+SCLK_IntEn_ADDR:	equ	5h
+SCLK_MASK:	equ	2h
+; TXi8 address and mask equates
+TXi8_Data_ADDR:	equ	4h
+TXi8_DriveMode_0_ADDR:	equ	104h
+TXi8_DriveMode_1_ADDR:	equ	105h
+TXi8_DriveMode_2_ADDR:	equ	7h
+TXi8_GlobalSelect_ADDR:	equ	6h
+TXi8_IntCtrl_0_ADDR:	equ	106h
+TXi8_IntCtrl_1_ADDR:	equ	107h
+TXi8_IntEn_ADDR:	equ	5h
+TXi8_MASK:	equ	4h
 ; I2CHWSDA address and mask equates
 I2CHWSDA_Data_ADDR:	equ	4h
 I2CHWSDA_DriveMode_0_ADDR:	equ	104h
@@ -93,6 +113,16 @@ I2CHWSCL_IntCtrl_0_ADDR:	equ	106h
 I2CHWSCL_IntCtrl_1_ADDR:	equ	107h
 I2CHWSCL_IntEn_ADDR:	equ	5h
 I2CHWSCL_MASK:	equ	80h
+; LED_DBG address and mask equates
+LED_DBG_Data_ADDR:	equ	8h
+LED_DBG_DriveMode_0_ADDR:	equ	108h
+LED_DBG_DriveMode_1_ADDR:	equ	109h
+LED_DBG_DriveMode_2_ADDR:	equ	bh
+LED_DBG_GlobalSelect_ADDR:	equ	ah
+LED_DBG_IntCtrl_0_ADDR:	equ	10ah
+LED_DBG_IntCtrl_1_ADDR:	equ	10bh
+LED_DBG_IntEn_ADDR:	equ	9h
+LED_DBG_MASK:	equ	1h
 ; LED address and mask equates
 LED_Data_ADDR:	equ	8h
 LED_DriveMode_0_ADDR:	equ	108h
@@ -102,4 +132,4 @@ LED_GlobalSelect_ADDR:	equ	ah
 LED_IntCtrl_0_ADDR:	equ	10ah
 LED_IntCtrl_1_ADDR:	equ	10bh
 LED_IntEn_ADDR:	equ	9h
-LED_MASK:	equ	1h
+LED_MASK:	equ	2h
